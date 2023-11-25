@@ -1,11 +1,14 @@
 import React from "react";
-// import imageName from "./assets/images/...";
 import "./App.css";
+
+import Navbar from "./assets/components/Navbar";
 
 function App() {
  return (
   <>
    <div className="App">
+    {/* __NAVBAR */}
+    <Navbar />
     <p>
      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda non
      illum consequatur quam, sed ratione rem reiciendis, explicabo placeat optio
