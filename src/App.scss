@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@400&display=swap");
-$primary-color: #18191a;
-$primary-text-color: #fff;
-$primary-font: "Montserrat", sans-serif;
-$secondary-color: #242526;
-$third-color: #007fff;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600&family=Roboto:wght@400&display=swap");
+$primary-color: #fff;
+$primary-text-color: #242526;
+$primary-font: "Ubuntu", sans-serif;
+$secondary-color: #007fff;
 
 @mixin image-center($url) {
  background-image: url(unquote($url));
@@ -28,14 +27,11 @@ body::-webkit-scrollbar-thumb {
  font-family: $primary-font;
 }
 body {
- background-color: $secondary-color !important;
+ background-color: $primary-color !important;
  color: $primary-text-color;
 }
 
 /*** Common Things ***/
-.bg-custom {
- background-color: $secondary-color;
-}
 .dn {
  display: none;
 }
@@ -76,7 +72,7 @@ h6 {
 /*** Navbar ***/
 .navbar {
  height: 65px;
- background-color: rgba($secondary-color, 0.8);
+ background-color: rgba($primary-color, 0.8);
  backdrop-filter: blur(20px);
  -webkit-backdrop-filter: blur(20px);
  position: sticky;
@@ -89,9 +85,14 @@ h6 {
   object-fit: cover;
  }
  .dropdown-menu {
-  background-color: $secondary-color;
+  background-color: $primary-color;
+  color: $primary-text-color;
   .dropdown-item {
    padding: 0.5rem 1rem;
+   &:hover {
+    background-color: $secondary-color;
+    color: #fff;
+   }
   }
  }
  .dropdown {
@@ -107,8 +108,12 @@ h6 {
   text-decoration: none;
   color: inherit;
  }
+ .desktop a {
+  padding: 0.4rem 1rem;
+  border-radius: 100rem;
+ }
  .desktop a.active {
-  border-bottom: 1px solid #fff;
+  border: 1px solid rgba(0, 0, 0, 0.4);
  }
 }
 
@@ -121,15 +126,16 @@ main {
 /*** HOME PAGE ***/
 .__home {
  position: relative;
- @include image-center("./assets/images/sefatullah.png");
+ @include image-center("./assets/images/coding.jpg");
  background-attachment: fixed;
  .__hero-section {
   width: 100%;
   height: fit-content;
   min-height: 95vh;
-  background-color: rgba($primary-color, 0.4);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   padding: 20px 40px;
   .intro {
    padding: 85px 0;
@@ -139,13 +145,16 @@ main {
    }
    p {
     font-size: 1rem;
-    font-family: "Roboto", sans-serif;
     line-height: 38px;
     width: 60%;
     margin-top: 50px !important;
    }
    a {
     margin-top: 40px;
+   }
+   .badge {
+    background-color: $primary-color;
+    color: $primary-text-color;
    }
   }
  }

@@ -14,7 +14,7 @@ function App() {
       <div className="intro container">
        <h2 className="fw-bolder mt-4">Mohammad Sefatullah</h2>
        <span
-        className="badge bg-custom fw-normal p-2"
+        className="badge fw-normal p-2"
         style={{ width: "fit-content" }}
        >
         Web Developer | Programmer | Coder
@@ -27,7 +27,7 @@ function App() {
        </p>
        <a
         href="about.html"
-        className="btn btn-dark p-2 px-4"
+        className="btn btn-light p-2 px-4"
         style={{ width: "fit-content" }}
        >
         Learn More{" "}

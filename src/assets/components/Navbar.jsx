@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../images/sefatullah.png";
+import menuIcon from "../images/menu.png";
 
 export default function Navbar() {
  return (
@@ -10,7 +11,13 @@ export default function Navbar() {
     </a>
     <div className="d-lg-none dropdown">
      <button className="nav-link mx-2" data-bs-toggle="dropdown">
-      <img src="images/icons/menu.png" alt="Menu" width="17" height="17" />
+      <img
+       src={menuIcon}
+       alt="Menu"
+       width="17"
+       height="17"
+       style={{ filter: "invert(0.75)" }}
+      />
      </button>
      <ul className="dropdown-menu dropdown-menu-dark dropdown-menu-end">
       <li>
