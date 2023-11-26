@@ -57,7 +57,7 @@ export default function Navbar() {
       <a href="about.html">About</a>
      </li>
      <li>
-      <a href="https://www.google.com/search?q=saad+al+amin" target="_blank">
+      <a href="https://www.google.com/search?q=mohammad+sefatullah" target="_blank">
        <svg
         viewBox="0 0 24 24"
         focusable="false"
