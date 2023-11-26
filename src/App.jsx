@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Sefatullah from "./assets/images/sefatullah-nobg.png";
 
 import Navbar from "./assets/components/Navbar";
 
@@ -10,13 +11,10 @@ function App() {
     {/* __NAVBAR */}
     <Navbar />
     <div className="__home">
-     <div className="__hero-section w-100">
-      <div className="intro container">
+     <div className="__hero-section w-100 pb-0">
+      <div className="intro container pb-0">
        <h2 className="fw-bolder mt-4">Mohammad Sefatullah</h2>
-       <span
-        className="badge fw-normal p-2"
-        style={{ width: "fit-content" }}
-       >
+       <span className="badge fw-normal p-2" style={{ width: "fit-content" }}>
         Web Developer | Programmer | Coder
        </span>
        <p className="mt-4">
@@ -45,6 +43,12 @@ function App() {
        </a>
       </div>
      </div>
+     <div
+      className="__new-section w-100 bg-dark"
+      style={{
+       minHeight: "20vh",
+      }}
+     ></div>
     </div>
    </div>
   </>

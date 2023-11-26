@@ -122,13 +122,18 @@ main {
 }
 .__home .__hero-section {
   width: 100%;
-  height: fit-content;
-  min-height: 95vh;
+  height: auto;
+  min-height: 90vh;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   padding: 20px 40px;
+  background-image: url(./assets/images/sefatullah-nobg.png);
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: bottom right;
+  background-attachment: fixed;
 }
 .__home .__hero-section .intro {
   padding: 85px 0;
