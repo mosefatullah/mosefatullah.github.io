@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600&family=Roboto:wght@400&display=swap");
-$primary-color: #fff;
-$primary-text-color: #242526;
+$primary-color: #242526;
+$primary-text-color: #fff;
 $primary-font: "Ubuntu", sans-serif;
 $secondary-color: #007fff;
 
@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
  font-family: $primary-font;
 }
 body {
- background-color: $primary-color !important;
+ background-color: #242526 !important;
  color: $primary-text-color;
 }
 
@@ -85,14 +85,8 @@ h6 {
   object-fit: cover;
  }
  .dropdown-menu {
-  background-color: $primary-color;
-  color: $primary-text-color;
   .dropdown-item {
    padding: 0.5rem 1rem;
-   &:hover {
-    background-color: $secondary-color;
-    color: #fff;
-   }
   }
  }
  .dropdown {
@@ -113,7 +107,7 @@ h6 {
   border-radius: 100rem;
  }
  .desktop a.active {
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba($primary-text-color, 0.4);
  }
 }
 

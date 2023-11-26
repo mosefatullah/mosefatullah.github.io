@@ -16,7 +16,6 @@ export default function Navbar() {
        alt="Menu"
        width="17"
        height="17"
-       style={{ filter: "invert(0.75)" }}
       />
      </button>
      <ul className="dropdown-menu dropdown-menu-dark dropdown-menu-end">
