@@ -47,7 +47,13 @@ function App() {
       style={{
        minHeight: "20vh",
       }}
-     ></div>
+     >
+      <p className="p-4">
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+       earum illo quos eaque sapiente soluta quo dolor harum velit, nihil non
+       ullam. Molestias esse facilis vero sed labore amet alias!
+      </p>
+     </div>
     </div>
    </div>
   </>

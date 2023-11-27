@@ -1,7 +1,7 @@
 {
   "homepage": "https://mosefatullah.github.io/",
   "name": "mosefatullah",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
