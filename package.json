@@ -7,7 +7,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "deploy": "vite build && echo 'sefatullah.me' > ./dist/CNAME && gh-pages -d dist",
+    "deploy": "vite build && echo 'sefatullah.me' > ./dist/CNAME && node deploy.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
