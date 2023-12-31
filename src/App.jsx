@@ -25,7 +25,8 @@ function App() {
    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
     <Navbar theme={theme} setTheme={setTheme} />
     <div className="flex flex-col items-center justify-center min-h-screen">
-     <h1 className="text-3xl font-bold underline">Hello world!</h1>
+     <h1 className="text-3xl font-bold">Mohammad Sefatullah!</h1>
+     <p className="mt-3">Coming soon...</p>
     </div>
    </div>
   </>
