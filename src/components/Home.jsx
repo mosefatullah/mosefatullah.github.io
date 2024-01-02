@@ -1,16 +1,17 @@
 import React from "react";
+import logo from "../assets/images/mohammadsefatullah.png";
 
 export default function Home() {
  return (
   <>
    <div className="_sketch h-[150px] w-[200px] absolute dark:left-[18%] top-8 rotate-12 rounded-3xl bg-gradient-to-l dark:from-green-600 dark:to-blue-500 blur-3xl filter dark:block dark:opacity-20 lg:top-44 lg:-left-20 lg:h-72 lg:w-[350px] xl:h-80 xl:w-[700px]"></div>
    <div
-    className="grid grid-cols-1 lg:grid-cols-2 gap-9 p-4 py-7 justify-items-center items-center gap-y-14 relative md:px-16"
+    className="grid grid-cols-1 lg:grid-cols-2 gap-9 p-4 py-7 justify-items-center items-center relative md:px-16"
     style={{
-     minHeight: "calc(100vh - 64px)",
+     minHeight: "calc(100vh - 74px)",
     }}
    >
-    <div className="max-w-xl text-center">
+    <div className="max-w-xl text-center mb-[5rem] lg:mb-0">
      <h1 className="text-4xl font-semibold text-gray-900 dark:text-white">
       &lt;Web Developer & Programmer/&gt;
      </h1>
@@ -29,7 +30,7 @@ export default function Home() {
       </a>
      </div>
     </div>
-    <div className="boardOfMe bg-white dark:bg-gray-800 rounded-xl shadow-xl max-w-xl w-full h-full">
+    <div className="boardOfMe bg-white dark:bg-gray-800 rounded-xl shadow-xl max-w-xl w-full">
      <div className="bg-slate-500 p-4 py-3 rounded-t-xl">
       <div className="flex gap-2">
        <div className="w-3 h-3 bg-red-600 rounded-full"></div>
@@ -37,6 +38,15 @@ export default function Home() {
        <div className="w-3 h-3 bg-green-600 rounded-full"></div>
       </div>
      </div>
+     <img src={logo} alt="Sefatullah" className="rounded-full w-40 h-40 mx-auto -mt-20 border-4 border-white shadow-xl" />
+     <div className="text-center mt-4 mb-7">
+        <h1 className="text-2xl font-semibold text-gray-900 dark:text-white">
+         Mohammad Sefatullah
+        </h1>
+        <p className="mt-1 text-gray-600 dark:text-gray-400">
+         Web Developer & Programmer
+        </p>
+    </div>
     </div>
    </div>
   </>
