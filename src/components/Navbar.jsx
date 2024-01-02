@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/sefatullah.png";
+import logo from "../assets/images/mohammadsefatullah.png";
 
 export default function Navbar({ theme, setTheme }) {
  const [openNav, setOpenNav] = React.useState(true);
