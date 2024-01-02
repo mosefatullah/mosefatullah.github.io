@@ -2,9 +2,9 @@ import React from "react";
 import logo from "../assets/images/sefatullah.png";
 
 export default function Navbar({ theme, setTheme }) {
- const [openNav, setOpenNav] = React.useState(false);
+ const [openNav, setOpenNav] = React.useState(true);
  return (
-  <nav className="bg-slate-100 shadow-md p-4 dark:bg-gray-800">
+  <nav className="bg-slate-100 shadow-md p-4 dark:bg-gray-800 sticky top-0 z-50">
    <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div className="relative flex items-center justify-between">
      <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -141,26 +141,26 @@ export default function Navbar({ theme, setTheme }) {
     <div className="dark:text-white space-y-1 px-2 pb-3 pt-4" hidden={openNav}>
      <a
       href="#"
-      className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+      className="dark:bg-gray-500 text-white block rounded-md px-3 py-2 text-base font-medium bg-gray-700"
       aria-current="page"
      >
       Home
      </a>
      <a
       href="#"
-      className="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+      className="hover:bg-gray-300 dark:hover:bg-gray-600 block rounded-md px-3 py-2 text-base font-medium"
      >
       About
      </a>
      <a
       href="#"
-      className="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+      className="hover:bg-gray-300 dark:hover:bg-gray-600 block rounded-md px-3 py-2 text-base font-medium"
      >
       Projects
      </a>
      <a
       href="#"
-      className="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+      className="hover:bg-gray-300 dark:hover:bg-gray-600 block rounded-md px-3 py-2 text-base font-medium"
      >
       Blog
      </a>
