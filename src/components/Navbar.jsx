@@ -130,7 +130,7 @@ export default function Navbar({ theme, setTheme }) {
         href="#"
         className="bg-green-600 dark:bg-blue-700 text-white rounded-md px-3 py-1 text-sm font-medium hover:bg-green-700 dark:hover:bg-blue-800"
        >
-        Subscribe
+        Contact
        </a>
       </div>
      </div>
