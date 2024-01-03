@@ -25,7 +25,7 @@ function App() {
    <ThemeInitialization />
    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
     <Navbar theme={theme} setTheme={setTheme} />
-    <Home />
+    <Home theme={theme} />
    </div>
   </>
  );

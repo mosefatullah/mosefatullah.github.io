@@ -2,20 +2,17 @@ import React from "react";
 import logo from "../assets/images/mohammadsefatullah.png";
 import lightpattern from "../assets/images/pattern_light.svg";
 import darkpattern from "../assets/images/pattern_dark.svg";
+import skills from "../assets/images/programming.png";
 
-export default function Home() {
+export default function Home({ theme }) {
+ React.useEffect(() => {
+  document.querySelector(".__home").style.backgroundImage = `url(${
+   theme === "dark" ? darkpattern : lightpattern
+  })`;
+ }, [theme]);
  return (
   <>
-   <div
-    className="__home"
-    style={{
-     backgroundImage: `url(${
-      window.localStorage.getItem("theme") === "dark"
-       ? darkpattern
-       : lightpattern
-     })`,
-    }}
-   >
+   <div className="__home">
     <div className="_sketch h-[150px] w-[200px] absolute dark:left-[18%] top-8 rotate-12 rounded-3xl bg-gradient-to-l dark:from-green-600 dark:to-blue-500 blur-3xl filter dark:block dark:opacity-20 lg:top-44 lg:-left-20 lg:h-72 lg:w-[350px] xl:h-80 xl:w-[700px]"></div>
 
     {/* ____ HERO SECTION */}
@@ -85,9 +82,20 @@ export default function Home() {
     </div>
 
     {/* ____ SKILLS SECTION */}
-    <div className="__skills-section w-full border-t border-gray-200 dark:border-gray-800 bg-pattern dark:bg-dpattern lg:flex lg:h-full lg:items-center lg:py-0 from-slate-900  bg-gradient-to-r">
+    <div className="__skills-section w-full border-t border-gray-200 dark:border-gray-800 bg-pattern dark:bg-dpattern lg:flex lg:h-full lg:items-center lg:py-0 dark:from-slate-900  bg-gradient-to-r from-white">
      <div className="w-full mx-auto p-4 md:px-0 py-14 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-7xl">
-      <div className="w-full min-h-96 bg-white dark:bg-gray-800 rounded-md shadow"></div>
+      <div className="flex flex-col items-center justify-center mt-7">
+        <img src={skills} className="w-16 h-16" />
+       <h1 className="text-4xl font-semibold text-gray-900 dark:text-white">
+        Skills
+       </h1>
+       <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl text-center">
+        Sefatullah have learned many
+        programming languages and frameworks. He is still learning and practicing
+        programming.
+       </p>
+      </div>
+      <div className="w-full mt-14 min-h-96 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-xl"></div>
      </div>
     </div>
    </div>
