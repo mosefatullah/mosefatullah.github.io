@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/mohammadsefatullah.png";
 import lightpattern from "../assets/images/pattern_light.svg";
 import darkpattern from "../assets/images/pattern_dark.svg";
@@ -33,8 +34,8 @@ export default function Home({ theme }) {
        programming studying as a self learner.
       </p>
       <div className="mt-11">
-       <a
-        href="about"
+       <Link
+        to="about"
         className="px-4 py-3 ml-4 border-2 dark:border-green-500 dark:text-green-500 rounded-md dark:hover:bg-green-600 dark:hover:text-white dark:hover:border-green-600 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 font-semibold transition duration-300 ease-in-out"
        >
         <svg
@@ -54,7 +55,7 @@ export default function Home({ theme }) {
          />
         </svg>
         Learn More
-       </a>
+       </Link>
       </div>
      </div>
      <div className="boardOfMe bg-white dark:bg-gray-800 rounded-xl shadow-xl max-w-xl w-full">
@@ -94,7 +95,61 @@ export default function Home({ theme }) {
         still learning and practicing programming.
        </p>
       </div>
-      <div className="w-full mt-14 min-h-96 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-xl"></div>
+      <div className="w-full mt-14 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-xl">
+       <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-wrap justify-center items-center py-7 space-x-3">
+         <div className="flex flex-col items-center justify-center p-4">
+          <img
+           src="https://img.icons8.com/color/96/000000/html-5.png"
+           className="w-16 h-16"
+          />
+          <p className="mt-2 text-gray-600 dark:text-gray-400">HTML</p>
+         </div>
+         <div className="flex flex-col items-center justify-center p-4">
+          <img
+           src="https://img.icons8.com/color/96/000000/css3.png"
+           className="w-16 h-16"
+          />
+          <p className="mt-2 text-gray-600 dark:text-gray-400">CSS</p>
+         </div>
+         <div className="flex flex-col items-center justify-center p-4">
+          <img
+           src="https://img.icons8.com/color/96/000000/javascript.png"
+           className="w-16 h-16"
+          />
+          <p className="mt-2 text-gray-600 dark:text-gray-400">JavaScript</p>
+         </div>
+         <div className="flex flex-col items-center justify-center p-4">
+          <img
+           src="https://img.icons8.com/color/96/000000/bootstrap.png"
+           className="w-16 h-16"
+          />
+          <p className="mt-2 text-gray-600 dark:text-gray-400">Bootstrap</p>
+         </div>
+         <div className="flex flex-col items-center justify-center p-4">
+          <img
+           src="https://img.icons8.com/color/96/000000/firebase.png"
+           className="w-16 h-16"
+          />
+          <p className="mt-2 text-gray-600 dark:text-gray-400">Firebase</p>
+         </div>
+         <div className="flex flex-col items-center justify-center p-4">
+          <img
+           src="https://img.icons8.com/color/96/000000/react-native.png"
+           className="w-16 h-16"
+          />
+          <p className="mt-2 text-gray-600 dark:text-gray-400">React</p>
+         </div>
+         <div className="flex flex-col items-center justify-center p-4">
+          <img
+           src="https://img.icons8.com/color/96/000000/nodejs.png"
+           className="w-16 h-16"
+          />
+          <p className="mt-2 text-gray-600 dark:text-gray-400">Nodejs</p>
+         </div>
+        </div>
+       </div>
+      </div>
      </div>
     </div>
    </div>

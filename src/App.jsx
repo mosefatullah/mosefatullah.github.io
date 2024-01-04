@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // components
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import ThemeInitialization from "./components/Theme";
 
 // pages
@@ -22,6 +23,7 @@ function App() {
    <>
     <Navbar theme={theme} setTheme={setTheme} />
     {children}
+    <Footer />
    </>
   );
  };

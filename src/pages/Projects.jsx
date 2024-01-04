@@ -2,7 +2,9 @@ import React from 'react'
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <div className='min-h-[70vh]'>
+      <h1>Projects</h1>
+    </div>
   )
 }
 
