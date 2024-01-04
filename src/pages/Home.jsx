@@ -95,7 +95,7 @@ export default function Home({ theme }) {
         still learning and practicing programming.
        </p>
       </div>
-      <div className="w-full mt-14 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-xl">
+      <div className="w-full my-14 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl">
        <div className="flex flex-col items-center justify-center">
         <div className="flex flex-wrap justify-center items-center py-7 space-x-3">
          <div className="flex flex-col items-center justify-center p-4">

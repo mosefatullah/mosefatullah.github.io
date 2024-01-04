@@ -11,6 +11,15 @@ export default function Navbar({ theme, setTheme }) {
   ["Blog", "/blog"],
  ];
 
+ React.useEffect(() => {
+  const items = document.querySelectorAll(".nav-menu-items a");
+  items.forEach((item) => {
+   item.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+   });
+  });
+ }, []);
+
  return (
   <nav className="bg-slate-100 shadow-md p-4 dark:bg-gray-800 sticky top-0 z-50">
    <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -134,7 +143,7 @@ export default function Navbar({ theme, setTheme }) {
    </div>
 
    <div className="md:hidden" id="mobile-menu" hidden={openNav}>
-    <div className="dark:text-white space-y-1 px-2 pt-6">
+    <div className="dark:text-white space-y-1 px-2 pt-6 nav-menu-items ">
      {navMenu.map((item, index) => (
       <NavLink
        to={item[1]}
@@ -198,12 +207,12 @@ export default function Navbar({ theme, setTheme }) {
       </p>
      </div>
      <div className="border-l border-gray-300 dark:border-gray-700 h-7"></div>
-      <Link
-       to="/contact"
-       className="bg-green-600 dark:bg-blue-700 text-white rounded-md px-3 py-1 text-sm font-medium hover:bg-green-700 dark:hover:bg-blue-800"
-      >
-       Contact
-      </Link>
+     <Link
+      to="/contact"
+      className="bg-green-600 dark:bg-blue-700 text-white rounded-md px-3 py-1 text-sm font-medium hover:bg-green-700 dark:hover:bg-blue-800"
+     >
+      Contact
+     </Link>
     </div>
    </div>
   </nav>
