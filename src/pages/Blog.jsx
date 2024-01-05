@@ -31,7 +31,7 @@ function Blog() {
   }
 `).then((r) => {
    const posts = r.data.user.publication.posts;
-   let postsSnippets = [];
+   let postsSnippets = "";
    const postsContainer = document.getElementById("posts");
    if(posts.length === 0) return postsContainer.innerHTML = `<div class="w-full text-center text-xl text-gray-900 dark:text-gray-100">No posts found</div>`;
    posts.forEach((post) => {
