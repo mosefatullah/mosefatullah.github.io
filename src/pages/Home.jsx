@@ -1,19 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import logo from "../assets/images/mohammadsefatullah.png";
 import lightpattern from "../assets/images/pattern_light.svg";
 import darkpattern from "../assets/images/pattern_dark.svg";
+
 import skills from "../assets/images/programming.png";
+import services from "../assets/images/services.png";
+import webdesign from "../assets/images/web-design.png";
+import webdevelop1 from "../assets/images/webdevelop-1.png";
+import webdevelop2 from "../assets/images/webdevelop-2.png";
+import webdevelop3 from "../assets/images/webdevelop-3.png";
+
+const TickIcon = () => (
+ <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  width="24px"
+  height="24px"
+  viewBox="0 0 24 24"
+  strokeWidth={1.5}
+  stroke="currentColor"
+  className="mr-2 mt-[-2px] inline-block dark:text-white"
+ >
+  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+ </svg>
+);
 
 export default function Home({ theme }) {
+ const homeRef = React.useRef(null);
  React.useEffect(() => {
-  document.querySelector(".__home").style.backgroundImage = `url(${
+  homeRef.current.style.backgroundImage = `url(${
    theme === "dark" ? darkpattern : lightpattern
   })`;
  }, [theme]);
  return (
   <>
-   <div className="__home">
+   <div className="__home" ref={homeRef}>
     <div className="_sketch h-[150px] w-[200px] absolute dark:left-[18%] top-8 rotate-12 rounded-3xl bg-gradient-to-l dark:from-green-600 dark:to-blue-500 blur-3xl filter dark:block dark:opacity-20 lg:top-44 lg:-left-20 lg:h-72 lg:w-[350px] xl:h-80 xl:w-[700px]"></div>
 
     {/* ____ HERO SECTION */}
@@ -25,7 +48,7 @@ export default function Home({ theme }) {
     >
      <div className="max-w-xl text-center mb-[5rem] lg:mb-0">
       <h1 className="text-4xl font-semibold text-gray-900 dark:text-white">
-       &lt;Web Developer & Programmer/&gt;
+       Passionate Web Developer!
       </h1>
       <p className="mt-6 text-gray-600 dark:text-gray-400">
        Sefatullah is a Bangladeshi web developer and programmer born in 2006. He
@@ -83,7 +106,7 @@ export default function Home({ theme }) {
     </div>
 
     {/* ____ SKILLS SECTION */}
-    <div className="__skills-section w-full border-t border-gray-200 dark:border-gray-800 bg-pattern dark:bg-dpattern lg:flex lg:h-full lg:items-center lg:py-0 dark:from-slate-900  bg-gradient-to-r from-white">
+    <div className="__skills-section w-full border-t border-gray-200 dark:border-gray-800 bg-pattern dark:bg-dpattern lg:flex lg:h-full lg:items-center lg:py-0 dark:from-gray-900  bg-gradient-to-r from-white">
      <div className="w-full mx-auto p-4 md:px-0 py-14 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-7xl">
       <div className="flex flex-col items-center justify-center mt-7">
        <img src={skills} className="w-16 h-16" />
@@ -147,6 +170,107 @@ export default function Home({ theme }) {
           />
           <p className="mt-2 text-gray-600 dark:text-gray-400">Nodejs</p>
          </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+
+    {/* ____ SERVICES SECTION */}
+    <div className="__skills-section w-full border-t border-gray-200 dark:border-gray-800 bg-pattern dark:bg-dpattern lg:flex lg:h-full lg:items-center lg:py-0 dark:bg-gray-900 bg-white">
+     <div className="w-full mx-auto p-4 md:px-0 py-14 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-7xl">
+      <div className="flex flex-col items-center justify-center mt-7">
+       <img src={services} className="w-16 h-16" />
+       <h1 className="text-4xl font-semibold text-gray-900 dark:text-white mt-2">
+        Services
+       </h1>
+       <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl text-center">
+        Sefatullah is a web developer and programmer. he is providing some
+        services to his clients.
+       </p>
+      </div>
+      <div className="w-full sm:p-1 lg:p-5 my-14 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl">
+       <div className="flex flex-wrap -mx-4 space-y-2">
+        <div className="w-full md:w-1/2 p-4 px-8 flex items-center justify-center">
+         <img
+          src={webdesign}
+          className="w-full aspect-video object-cover rounded-md"
+         />
+        </div>
+        <div className="w-full md:w-1/2 px-8 flex flex-col justify-center">
+         <h1 className="text-gray-900 dark:text-white text-3xl font-semibold mt-2">
+          Web Design
+         </h1>
+         <p className="mt-4 text-gray-600 dark:text-gray-400">
+          I can design your website with modern design and user friendly
+          interface.
+         </p>
+         <ul className="mt-4 text-gray-600 dark:text-gray-400">
+          <li className="flex items-center">
+           <TickIcon />
+           Modern Design
+          </li>
+          <li className="flex items-center">
+           <TickIcon />
+           User Friendly
+          </li>
+          <li className="flex items-center">
+           <TickIcon />
+           Responsive
+          </li>
+         </ul>
+         <div className="mt-6">
+          <span className="text-gray-600 dark:text-gray-400">
+           Starting at
+           <span className="text-green-500 dark:text-green-400 font-semibold ml-2">
+            $100
+           </span>
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div className="w-full sm:p-1 lg:p-5 my-14 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl">
+       <div className="flex flex-wrap -mx-4 space-y-5">
+        <div className="w-full md:w-1/2 px-8 flex flex-col justify-center">
+         <h1 className="text-gray-900 dark:text-white text-3xl font-semibold mt-2">
+          Web Development
+         </h1>
+         <p className="mt-4 text-gray-600 dark:text-gray-400">
+          I can develop your website with modern design.
+         </p>
+         <ul className="mt-4 text-gray-600 dark:text-gray-400">
+          <li className="flex items-center">
+           <TickIcon />
+           Modern Design
+          </li>
+          <li className="flex items-center">
+           <TickIcon />
+           User Friendly
+          </li>
+          <li className="flex items-center">
+           <TickIcon />
+           Responsive
+          </li>
+         </ul>
+         <div className="mt-6">
+          <span className="text-gray-600 dark:text-gray-400">
+           Starting at
+           <span className="text-green-500 dark:text-green-400 font-semibold ml-2">
+            $100
+           </span>
+          </span>
+         </div>
+        </div>
+        <div className="w-full md:w-1/2 p-4 px-8 flex items-center justify-center relative">
+         <img
+          src={webdevelop3}
+          className="object-cover w-full mb-9 rounded-md"
+         />
+         <img
+          src={webdevelop1}
+          className="absolute top-[50px] left-[100px] h-[80%] rounded-md"
+         />
         </div>
        </div>
       </div>
