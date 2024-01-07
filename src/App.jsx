@@ -78,6 +78,14 @@ function App() {
        }
       />
       <Route
+       path="/packages"
+       element={
+        <WithNavbar>
+         <Error theme={theme} />
+        </WithNavbar>
+       }
+      />
+      <Route
        path="*"
        element={
         <WithNavbar>

@@ -9,7 +9,6 @@ import skills from "../assets/images/programming.png";
 import services from "../assets/images/services.png";
 import webdesign from "../assets/images/web-design.png";
 import webdevelop1 from "../assets/images/webdevelop-1.png";
-import webdevelop2 from "../assets/images/webdevelop-2.png";
 import webdevelop3 from "../assets/images/webdevelop-3.png";
 
 const TickIcon = () => (
@@ -197,7 +196,7 @@ export default function Home({ theme }) {
           className="w-full aspect-video object-cover rounded-md"
          />
         </div>
-        <div className="w-full md:w-1/2 px-8 flex flex-col justify-center">
+        <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
          <h1 className="text-gray-900 dark:text-white text-3xl font-semibold mt-2">
           Web Design
          </h1>
@@ -223,16 +222,24 @@ export default function Home({ theme }) {
           <span className="text-gray-600 dark:text-gray-400">
            Starting at
            <span className="text-green-500 dark:text-green-400 font-semibold ml-2">
-            $100
+            $10
            </span>
           </span>
+         </div>
+         <div className="mt-9">
+          <Link
+           to="package/?id=webdesign"
+           className="px-4 py-3 border-2 dark:border-green-500 dark:text-green-500 rounded-md dark:hover:bg-green-600 dark:hover:text-white dark:hover:border-green-600 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 font-semibold transition duration-300 ease-in-out"
+          >
+           Comapre Packages
+          </Link>
          </div>
         </div>
        </div>
       </div>
       <div className="w-full sm:p-1 lg:p-5 my-14 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl">
-       <div className="flex flex-wrap -mx-4 space-y-5">
-        <div className="w-full md:w-1/2 px-8 flex flex-col justify-center">
+       <div className="flex flex-wrap -mx-4 space-y-2">
+        <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
          <h1 className="text-gray-900 dark:text-white text-3xl font-semibold mt-2">
           Web Development
          </h1>
@@ -242,30 +249,38 @@ export default function Home({ theme }) {
          <ul className="mt-4 text-gray-600 dark:text-gray-400">
           <li className="flex items-center">
            <TickIcon />
-           Modern Design
+           Website Design
           </li>
           <li className="flex items-center">
            <TickIcon />
-           User Friendly
+           Controlled Functions
           </li>
           <li className="flex items-center">
            <TickIcon />
-           Responsive
+           Admin Panel
           </li>
          </ul>
          <div className="mt-6">
           <span className="text-gray-600 dark:text-gray-400">
            Starting at
            <span className="text-green-500 dark:text-green-400 font-semibold ml-2">
-            $100
+            $30
            </span>
           </span>
+         </div>
+         <div className="mt-9">
+          <Link
+           to="package/?id=webdev"
+           className="px-4 py-3 border-2 dark:border-green-500 dark:text-green-500 rounded-md dark:hover:bg-green-600 dark:hover:text-white dark:hover:border-green-600 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 font-semibold transition duration-300 ease-in-out"
+          >
+           Comapre Packages
+          </Link>
          </div>
         </div>
         <div className="w-full md:w-1/2 p-4 px-8 flex items-center justify-center relative">
          <img
           src={webdevelop3}
-          className="object-cover w-full mb-9 rounded-md"
+          className="object-cover w-full rounded-md"
          />
          <img
           src={webdevelop1}
