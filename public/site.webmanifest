@@ -1,6 +1,7 @@
 {
     "name": "Mohammad Sefatullah",
     "short_name": "Sefatullah",
+    "start_url": ".",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

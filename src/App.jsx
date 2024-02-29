@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 // components
 import Navbar from "./components/Navbar";
@@ -18,7 +18,10 @@ function App() {
   localStorage.getItem("theme") || "dark"
  );
 
- const WithNavbar = function ({ children }) {
+ const Layout = function ({ children }) {
+  React.useEffect(() => {
+   window.scrollTo(0, 0);
+  }, [children]);
   return (
    <>
     <Navbar theme={theme} setTheme={setTheme} />
@@ -48,49 +51,49 @@ function App() {
       <Route
        path="/"
        element={
-        <WithNavbar>
+        <Layout>
          <Home theme={theme} />
-        </WithNavbar>
+        </Layout>
        }
       />
       <Route
        path="/about"
        element={
-        <WithNavbar>
+        <Layout>
          <About theme={theme} />
-        </WithNavbar>
+        </Layout>
        }
       />
       <Route
        path="/projects"
        element={
-        <WithNavbar>
+        <Layout>
          <Projects theme={theme} />
-        </WithNavbar>
+        </Layout>
        }
       />
       <Route
        path="/blog"
        element={
-        <WithNavbar>
+        <Layout>
          <Blog theme={theme} />
-        </WithNavbar>
+        </Layout>
        }
       />
       <Route
        path="/packages"
        element={
-        <WithNavbar>
+        <Layout>
          <Error theme={theme} />
-        </WithNavbar>
+        </Layout>
        }
       />
       <Route
        path="*"
        element={
-        <WithNavbar>
+        <Layout>
          <Error theme={theme} />
-        </WithNavbar>
+        </Layout>
        }
       />
      </Routes>
