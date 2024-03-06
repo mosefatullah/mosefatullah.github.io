@@ -28,7 +28,7 @@ function Projects() {
          src="https://img.icons8.com/color/96/000000/project.png"
          className="w-15 h-15"
          />
-         <p className="mt-2 text-gray-600 dark:text-gray-400">&lt;${repo.name}/&gt;</p>
+         <p className="mt-2 text-gray-600 dark:text-gray-400">${repo.name}</p>
          <a href="${repo.html_url}" target="_blank" rel="noreferrer" class="mt-2 text-gray-600 dark:text-gray-400 hover:underline hover:text-blue-500 text-sm">View on GitHub</a>
        </div>
          `;
@@ -73,7 +73,7 @@ function Projects() {
      Notable Projects
     </h1>
     <div
-     className="flex flex-wrap justify-center items-center my-7 space-x-3 min-h-[200px]"
+     className="grid grid-cols-2 md:grid-cols-4 items-center my-7 space-x-3 min-h-[200px]"
      id="notable-projects"
     ></div>
    </div>
@@ -82,7 +82,7 @@ function Projects() {
      Projects
     </h1>
     <div
-     className="flex flex-wrap justify-center items-center my-7 space-x-3 min-h-[200px]"
+     className="grid grid-cols-2 md:grid-cols-4 items-center my-7 space-x-3 min-h-[200px]"
      id="projects"
     ></div>
    </div>
