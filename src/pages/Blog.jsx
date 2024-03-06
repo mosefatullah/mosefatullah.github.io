@@ -4,6 +4,7 @@ function Blog() {
  let blogPageNo = 2;
  let blogPageNoLimit = 5;
  const hostName = "sefatullah.hashnode.dev";
+
  async function fetchPosts(afterID, repeat = true) {
   async function gql(query) {
    const response = await fetch("https://gql.hashnode.com/", {
@@ -138,9 +139,8 @@ function Blog() {
      window.scrollTo({ top: 0, behavior: "smooth" });
     };
     button.className =
-     "text-gray-600 dark:text-gray-400 hover:underline hover:text-blue-500 text-md text-blue-500 dark:text-blue-500";
+     "text-gray-600 dark:text-gray-400 hover:underline hover:text-blue-500 text-md";
     postNumberNav.appendChild(button);
-
     if (pInfo.hasNextPage) {
      blogPageNo++;
      fetchPosts(pInfo.endCursor, true);
@@ -163,7 +163,7 @@ function Blog() {
    </div>
    <div className="postNumberNav flex justify-center items-center space-x-3 mt-7 mb-12 overflow-scroll">
     <button
-     className="text-gray-600 dark:text-gray-400 hover:underline hover:text-blue-500 text-md text-blue-500 dark:text-blue-500"
+     className="hover:underline hover:text-blue-500 text-md text-blue-500 dark:text-blue-500"
      onClick={(e) => {
       document.querySelectorAll(".postNumberNav button").forEach((l) => {
        l.classList.remove("text-blue-500", "dark:text-blue-500");

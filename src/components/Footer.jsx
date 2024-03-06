@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="md:grid md:grid-cols-2 md:gap-8">
        <div>
         <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-600 dark:text-white uppercase">
-         Basic
+         Website
         </h4>
         <ul className="mt-6 space-y-4">
          <li>
@@ -49,7 +49,7 @@ export default function Footer() {
        </div>
        <div className="mt-12 md:mt-0">
         <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-600 dark:text-white uppercase">
-         Contact
+         Social Media
         </h4>
         <ul className="mt-6 space-y-4">
          <li>
@@ -62,6 +62,36 @@ export default function Footer() {
            Facebook
           </a>
          </li>
+         <li>
+          <a
+           href="https://linkedin.com/in/mosefatullah/"
+           target="_blank"
+           rel="noopener noreferrer"
+           className="text-base leading-6 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
+          >
+           LinkedIn
+          </a>
+         </li>
+         <li>
+          <a
+           href="https://github.com/mosefatullah/"
+           target="_blank"
+           rel="noopener noreferrer"
+           className="text-base leading-6 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
+          >
+           Github
+          </a>
+         </li>
+         <li>
+          <a
+           href="https://twitter.com/mosefatullah/"
+           target="_blank"
+           rel="noopener noreferrer"
+           className="text-base leading-6 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
+          >
+           Twitter
+          </a>
+         </li>
         </ul>
        </div>
       </div>
@@ -69,7 +99,8 @@ export default function Footer() {
     </div>
     <div className="mt-12 border-t border-gray-300 pt-8 dark:border-gray-600">
      <p className="text-base leading-6 text-gray-500 dark:text-gray-400">
-      &copy; 2021 Mohammad Sefatullah. All rights reserved.
+      &copy; <span>{new Date().getFullYear() || "2024"}</span> Sefatullah. All
+      rights reserved.
      </p>
     </div>
    </div>

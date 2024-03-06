@@ -55,7 +55,7 @@ export default function Home({ theme }) {
        He is currently studying in intermediate level and continuing his
        programming studying as a self learner.
       </p>
-      <div className="mt-11">
+      <div className="mt-12">
        <Link
         to="about"
         className="px-4 py-3 ml-4 border-2 dark:border-green-500 dark:text-green-500 rounded-md dark:hover:bg-green-600 dark:hover:text-white dark:hover:border-green-600 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 font-semibold transition duration-300 ease-in-out"
@@ -278,10 +278,7 @@ export default function Home({ theme }) {
          </div>
         </div>
         <div className="w-full md:w-1/2 p-4 px-8 flex items-center justify-center relative">
-         <img
-          src={webdevelop3}
-          className="object-cover w-full rounded-md"
-         />
+         <img src={webdevelop3} className="object-cover w-full rounded-md" />
          <img
           src={webdevelop1}
           className="absolute top-[50px] left-[100px] h-[80%] rounded-md"
