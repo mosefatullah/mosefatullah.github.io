@@ -71,6 +71,8 @@ function Projects() {
   <div className="min-h-[70vh] max-w-5xl mx-auto my-9 lg:my-16">
    <Helmet>
     <title>Projects | Mohammad Sefatullah</title>
+    <meta name="description" content="Mohammad Sefatullah's projects." />
+    <meta name="keywords" content="Mohammad Sefatullah, projects, web developer" />
     <link rel="canonical" href="https://sefatullah.com/?/projects" />
    </Helmet>
    <div className="bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl">

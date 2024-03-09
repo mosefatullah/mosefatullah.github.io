@@ -9,6 +9,14 @@ function About() {
   <div className="__about min-h-[70vh]">
    <Helmet>
     <title>About | Mohammad Sefatullah</title>
+    <meta
+     name="description"
+     content="About Mohammad Sefatullah, a web designer, developer, and programmer."
+    />
+    <meta
+     name="keywords"
+     content="About Mohammad Sefatullah, About Sefatullah, web developer, coder, bangladesh, web designer, frontend developer"
+    />
     <link rel="canonical" href="https://sefatullah.com/?/about" />
    </Helmet>
    {/* ____ HERO SECTION */}

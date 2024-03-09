@@ -38,6 +38,32 @@ export default function Home({ theme }) {
   <>
    <Helmet>
     <title>Mohammad Sefatullah - Official Website</title>
+    <meta
+     name="description"
+     content="Mohammad Sefatullah is a Bangladeshi web designer, developer and programmer. He dreams of becoming a software engineer and passionate programming leader."
+    />
+    <meta
+     name="keywords"
+     content="Mohammad Sefatullah, Sefatullah, web developer, coder, bangladesh, web designer, frontend developer"
+    />
+    <script type="application/ld+json">
+     {`
+        {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohammad Sefatullah",
+        "url": "https://sefatullah.com",
+        "image": "https://sefatullah.com/android-chrome-512x512.png",
+        "sameAs": [
+            "https://www.facebook.com/mosefatullah",
+            "https://www.instagram.com/mosefatullah",
+            "https://www.linkedin.com/in/mosefatullah",
+            "https://www.github.com/mosefatullah",
+            "https://www.twitter.com/mosefatullah"
+        ]
+        }
+        `}
+    </script>
    </Helmet>
    <div className="__home" ref={homeRef}>
     <div className="_sketch h-[150px] w-[200px] absolute dark:left-[18%] top-8 rotate-12 rounded-3xl bg-gradient-to-l dark:from-green-600 dark:to-blue-500 blur-3xl filter dark:block dark:opacity-20 lg:top-44 lg:-left-20 lg:h-72 lg:w-[350px] xl:h-80 xl:w-[700px]"></div>

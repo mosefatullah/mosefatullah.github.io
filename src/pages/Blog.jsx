@@ -156,6 +156,8 @@ function Blog() {
   <>
    <Helmet>
     <title>Blog | Mohammad Sefatullah</title>
+    <meta name="description" content="Mohammad Sefatullah's blog posts." />
+    <meta name="keywords" content="Mohammad Sefatullah, blog, web developer" />
     <link rel="canonical" href="https://sefatullah.com/?/blog" />
    </Helmet>
    <div
