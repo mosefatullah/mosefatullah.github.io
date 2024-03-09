@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 function Blog() {
  let blogPageNo = 2;
@@ -153,6 +154,10 @@ function Blog() {
  }, []);
  return (
   <>
+   <Helmet>
+    <title>Blog | Mohammad Sefatullah</title>
+    <link rel="canonical" href="https://sefatullah.com/?/blog" />
+   </Helmet>
    <div
     className="flex flex-col justify-center items-start max-w-2xl mx-auto my-5 lg:my-16 space-y-5 lg:space-y-10 min-h-[70vh]"
     id="posts"

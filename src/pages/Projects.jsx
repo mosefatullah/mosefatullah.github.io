@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 function Projects() {
  React.useEffect(() => {
@@ -68,6 +69,10 @@ function Projects() {
  }, []);
  return (
   <div className="min-h-[70vh] max-w-5xl mx-auto my-9 lg:my-16">
+   <Helmet>
+    <title>Projects | Mohammad Sefatullah</title>
+    <link rel="canonical" href="https://sefatullah.com/?/projects" />
+   </Helmet>
    <div className="bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl">
     <h1 className="text-2xl font-medium text-center border-b border-gray-200 dark:border-slate-700 py-6 bg-slate-50 dark:bg-transparent rounded-t-md">
      Notable Projects

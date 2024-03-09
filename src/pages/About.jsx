@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 // Assets
 import me from "../assets/images/sefatullah.jpg";
@@ -6,6 +7,10 @@ import me from "../assets/images/sefatullah.jpg";
 function About() {
  return (
   <div className="__about min-h-[70vh]">
+   <Helmet>
+    <title>About | Mohammad Sefatullah</title>
+    <link rel="canonical" href="https://sefatullah.com/?/about" />
+   </Helmet>
    {/* ____ HERO SECTION */}
    <div
     className="grid grid-cols-1 lg:grid-cols-2 gap-9 p-4 pt-14 lg:pb-20 justify-items-center items-center relative md:px-16 lg:gap-y-12"

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 import logo from "../assets/images/mohammadsefatullah.png";
@@ -35,6 +36,9 @@ export default function Home({ theme }) {
  }, [theme]);
  return (
   <>
+   <Helmet>
+    <title>Mohammad Sefatullah - Official Website</title>
+   </Helmet>
    <div className="__home" ref={homeRef}>
     <div className="_sketch h-[150px] w-[200px] absolute dark:left-[18%] top-8 rotate-12 rounded-3xl bg-gradient-to-l dark:from-green-600 dark:to-blue-500 blur-3xl filter dark:block dark:opacity-20 lg:top-44 lg:-left-20 lg:h-72 lg:w-[350px] xl:h-80 xl:w-[700px]"></div>
 
