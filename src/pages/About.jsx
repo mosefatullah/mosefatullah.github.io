@@ -12,13 +12,15 @@ function About() {
     <meta
      name="description"
      content="About Mohammad Sefatullah, a web designer, developer, and programmer."
+     data-react-helmet="true"
     />
     <meta
      name="keywords"
      content="About Mohammad Sefatullah, About Sefatullah, web developer, coder, bangladesh, web designer, frontend developer"
+     data-react-helmet="true"
     />
-    <link rel="canonical" href="https://sefatullah.com/?/about" />
-    <script type="application/ld+json">
+    <link rel="canonical" href="https://sefatullah.com/?/about"  data-react-helmet="true" />
+    <script type="application/ld+json"  data-react-helmet="true">
      {`
        {
         "@context": "https://schema.org",

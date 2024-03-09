@@ -156,9 +156,21 @@ function Blog() {
   <>
    <Helmet>
     <title>Blog | Mohammad Sefatullah</title>
-    <meta name="description" content="Mohammad Sefatullah's blog posts." />
-    <meta name="keywords" content="Mohammad Sefatullah, blog, web developer" />
-    <link rel="canonical" href="https://sefatullah.com/?/blog" />
+    <meta
+     name="description"
+     content="Mohammad Sefatullah's blog posts."
+     data-react-helmet="true"
+    />
+    <meta
+     name="keywords"
+     content="Mohammad Sefatullah, blog, web developer"
+     data-react-helmet="true"
+    />
+    <link
+     rel="canonical"
+     href="https://sefatullah.com/?/blog"
+     data-react-helmet="true"
+    />
    </Helmet>
    <div
     className="flex flex-col justify-center items-start max-w-2xl mx-auto my-5 lg:my-16 space-y-5 lg:space-y-10 min-h-[70vh]"

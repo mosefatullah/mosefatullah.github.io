@@ -41,12 +41,14 @@ export default function Home({ theme }) {
     <meta
      name="description"
      content="Mohammad Sefatullah is a Bangladeshi web designer, developer and programmer. He dreams of becoming a software engineer and passionate programming leader."
+     data-react-helmet="true"
     />
     <meta
      name="keywords"
      content="Mohammad Sefatullah, Sefatullah, web developer, coder, bangladesh, web designer, frontend developer"
+     data-react-helmet="true"
     />
-    <script type="application/ld+json">
+    <script type="application/ld+json" data-react-helmet="true">
      {`
         {
         "@context": "https://schema.org",
