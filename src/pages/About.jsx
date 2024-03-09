@@ -18,6 +18,19 @@ function About() {
      content="About Mohammad Sefatullah, About Sefatullah, web developer, coder, bangladesh, web designer, frontend developer"
     />
     <link rel="canonical" href="https://sefatullah.com/?/about" />
+    <script type="application/ld+json">
+     {`
+       {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "about": {
+          "@type": "Person",
+          "name": "Mohammad Sefatullah",
+          "sameAs": "https://sefatullah.com",
+        }
+      }
+        `}
+    </script>
    </Helmet>
    {/* ____ HERO SECTION */}
    <div
