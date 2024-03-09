@@ -26,7 +26,7 @@ function About() {
         "about": {
           "@type": "Person",
           "name": "Mohammad Sefatullah",
-          "sameAs": "https://sefatullah.com",
+          "sameAs": "https://sefatullah.me",
         }
       }
         `}
