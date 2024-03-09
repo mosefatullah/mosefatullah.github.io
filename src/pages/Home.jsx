@@ -53,7 +53,11 @@ export default function Home({ theme }) {
         "@type": "Person",
         "name": "Mohammad Sefatullah",
         "jobTitle": "Web Developer",
-        "description": "Mohammad Sefatullah is a Bangladeshi web designer, developer and programmer. He dreams of becoming a software engineer and passionate programming leader.",
+        "description": "Mohammad Sefatullah, a young and promising web designer, developer, and
+        programmer, hails from the Shariatpur District of Bangladesh. Born on
+        September 13th, his passion for coding ignited while he was still in
+        seventh grade. This early spark ignited a dream – to become a software
+        engineer and make a positive impact on his community.",
         "url": "https://sefatullah.me",
         "image": "https://sefatullah.com/android-chrome-512x512.png",
         "sameAs": [
