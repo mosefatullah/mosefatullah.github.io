@@ -64,7 +64,7 @@ export default function Navbar({ theme, setTheme }) {
        </svg>
       </button>
      </div>
-     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+     <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
       <Link className="flex space-x-3" to="/">
        <img
         src={logo}

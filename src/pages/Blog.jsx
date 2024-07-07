@@ -66,36 +66,36 @@ function Blog() {
       const post = p.node;
       postsSnippets += `
        <div class="bg-white dark:bg-gray-800 shadow overflow-hidden rounded-lg px-7 py-5 sm:px-6">
-         <div class="mb-7 ${post.coverImage ? "" : "hidden"}">
+         <div class="mb-7 ${post?.coverImage ? "" : "hidden"}">
              <img
                class="w-full object-cover aspect-video rounded-lg"
-               src=${post.coverImage.url}
+               src=${post?.coverImage?.url}
                alt=""
              />
          </div>
-         <button href="https://sefatullah.hashnode.dev/${post.slug}">
+         <a href="https://sefatullah.hashnode.dev/${post?.slug}" target="_blank">
                <h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-white hover:underline hover:text-blue-500">
-                 ${post.title}
+                 ${post?.title}
                </h3>
-         </button>
+         </a>
          <p class="mt-2 max-w-2xl text-sm leading-5 text-gray-500 dark:text-gray-400">
-           ${post.brief}
+           ${post?.brief}
          </p>
          <div class="border-t border-gray-200 dark:border-gray-700 px-4 py-5 sm:p-0 mt-5">
                <div class="flex flex-wrap mt-2">
                    <div class="m-1">
                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium leading-4 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-100">
-                           ${new Date(post.publishedAt).toDateString()}
+                           ${new Date(post?.publishedAt).toDateString()}
                        </span>
                    </div>
                    <div class="m-1">
                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium leading-4 bg-blue-100 text-blue-800 dark:bg-blue-800 dark:text-blue-100">
-                           ${post.reactionCount} Reactions
+                           ${post?.reactionCount} Reactions
                        </span>
                    </div>
                    <div class="m-1">
                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium leading-4 bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100">
-                           ${post.responseCount} Responses
+                           ${post?.responseCount} Responses
                        </span>
                    </div>
                </div>

@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 
 function App() {
@@ -81,10 +82,10 @@ function App() {
        }
       />
       <Route
-       path="/packages"
+       path="/contact"
        element={
         <Layout>
-         <Error theme={theme} />
+         <Contact theme={theme} />
         </Layout>
        }
       />
