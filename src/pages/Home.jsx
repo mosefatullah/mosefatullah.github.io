@@ -2,6 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Typewriter from 'typewriter-effect/dist/core';
+
 import About from "../components/home/about";
 
 import lightpattern from "../assets/images/pattern_light.svg";
@@ -10,7 +12,7 @@ import skills from "../assets/images/programming.png";
 
 /* Utils */
 import Data from "../data/home.js";
-import { fadeAnimation, headContainerAnimation, headContentAnimation, headTextAnimation, slideAnimation } from "../utils/motion.js";
+import { headContainerAnimation, headContentAnimation, headTextAnimation, slideAnimation } from "../utils/motion.js";
 import { schema } from './../data/schema';
 import WithMotion from "../components/WithMotion.jsx";
 
@@ -19,6 +21,12 @@ export default function Home({ theme }) {
     React.useEffect(() => {
         homeRef.current.style.backgroundImage = `url(${theme === "dark" ? darkpattern : lightpattern
             })`;
+        new Typewriter('#h', {
+            strings: Data.hero.headerP2,
+            autoStart: true,
+            delay: 100,
+            loop: true
+        });
     }, [theme]);
     return (
         <>
@@ -51,7 +59,7 @@ export default function Home({ theme }) {
                     <WithMotion object={headContainerAnimation}>
                         <div className="mb-[5rem] lg:mb-0 pt-6 lg:pt-0">
                             <motion.div {...headTextAnimation}>
-                                <h1 className="text-4xl md:text-5xl font-bold leading-relaxed">{Data.hero.header}</h1>
+                                <h1 className="text-4xl md:text-5xl font-bold lg:leading-[3.5rem]">{Data.hero.headerP1}&nbsp;<span id="h">{Data.hero.headerP2[0]}</span></h1>
                             </motion.div>
                             <motion.div {...headContentAnimation}>
                                 <p className="mt-8 text-gray-600 dark:text-gray-400">
