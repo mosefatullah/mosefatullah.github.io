@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
     "deploy": "vite build && echo sefatullah.me > ./dist/CNAME && node deploy.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",

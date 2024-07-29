@@ -2,17 +2,13 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
-import logo from "../assets/images/mohammadsefatullah.png";
 import lightpattern from "../assets/images/pattern_light.svg";
 import darkpattern from "../assets/images/pattern_dark.svg";
 
 import skills from "../assets/images/programming.png";
 import services from "../assets/images/services.png";
-import webdesign from "../assets/images/web-design.png";
-import webdevelop1 from "../assets/images/webdevelop-1.png";
-import webdevelop3 from "../assets/images/webdevelop-3.png";
 
-const TickIcon = () => (
+/*const TickIcon = () => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -25,7 +21,7 @@ const TickIcon = () => (
     >
         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
     </svg>
-);
+);*/
 
 export default function Home({ theme }) {
     const homeRef = React.useRef(null);
@@ -53,7 +49,7 @@ export default function Home({ theme }) {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Mohammad Sefatullah",
-        "jobTitle": "Web Developer",
+        "jobTitle": "Full Stack Web Developer",
         "description": "Mohammad Sefatullah, a young and promising web designer, developer, and
         programmer, hails from the Shariatpur District of Bangladesh. Born on
         September 13th, his passion for coding ignited while he was still in
@@ -73,7 +69,7 @@ export default function Home({ theme }) {
                 </script>
             </Helmet>
             <div className="__home" ref={homeRef}>
-                <div className="_sketch h-[150px] w-[200px] absolute dark:left-[18%] top-8 rotate-12 rounded-3xl bg-gradient-to-l dark:from-green-600 dark:to-blue-500 blur-3xl filter dark:block dark:opacity-20 lg:top-44 lg:-left-20 lg:h-72 lg:w-[350px] xl:h-80 xl:w-[700px]"></div>
+                <div className="_sketch h-[150px] w-[200px] absolute dark:left-[18%] top-8 rotate-12 rounded-3xl bg-gradient-to-l dark:from-transparent dark:to-blue-500 blur-3xl filter dark:block dark:opacity-20 lg:top-44 lg:-left-20 lg:h-72 lg:w-[350px] xl:h-80 xl:w-[700px]"></div>
 
                 {/* ____ HERO SECTION */}
                 <div
@@ -82,17 +78,15 @@ export default function Home({ theme }) {
                         minHeight: "calc(100vh - 74px)",
                     }}
                 >
-                    <div className="max-w-xl text-center mb-[5rem] lg:mb-0">
-                        <h1 className="text-4xl font-semibold text-gray-900 dark:text-white">
-                            Passionate Web Developer!
-                        </h1>
-                        <p className="mt-6 text-gray-600 dark:text-gray-400">
+                    <div className="max-w-xl mb-[5rem] lg:mb-0 pt-6 lg:pt-0">
+                        <h1 className="text-4xl md:text-5xl font-bold">Passionate Coder & Developer!</h1>
+                        <p className="mt-8 text-gray-600 dark:text-gray-400">
                             Sefatullah, also known as Mohammad Sefatullah, is a professional full stack web developer from Bangladesh born in 2006. He dreams of becoming a software engineer and passionate coding leader. He is trying to get involved in various extra curricular activities with the vision of making a positive impact on the society.
                         </p>
                         <div className="mt-12">
                             <Link
                                 to="about"
-                                className="px-4 py-3 ml-4 border-2 dark:border-green-500 dark:text-green-500 rounded-md dark:hover:bg-green-600 dark:hover:text-white dark:hover:border-green-600 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 font-semibold transition duration-300 ease-in-out"
+                                className="px-4 py-3 border-2 dark:border-green-500 dark:text-green-500 rounded-md dark:hover:bg-green-600 dark:hover:text-white dark:hover:border-green-600 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 font-semibold transition duration-300 ease-in-out"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -114,33 +108,53 @@ export default function Home({ theme }) {
                             </Link>
                         </div>
                     </div>
-                    <div className="boardOfMe bg-white dark:bg-gray-800 rounded-xl shadow-xl max-w-xl w-full">
-                        <div className="bg-slate-500 p-4 py-3 rounded-t-xl">
-                            <div className="flex gap-2">
+                    <div className="boardOfMe bg-gray-800 rounded-xl shadow-xl max-w-xl w-full">
+                        <div className="bg-slate-500 p-4 py-2.5 rounded-t-xl flex text-center">
+                            <div className="flex gap-2 mt-1">
                                 <div className="w-3 h-3 bg-red-600 rounded-full"></div>
                                 <div className="w-3 h-3 bg-yellow-600 rounded-full"></div>
                                 <div className="w-3 h-3 bg-green-600 rounded-full"></div>
                             </div>
+                            <p className="text-sm text-gray-300 w-full p-0">Visual Studio Code</p>
                         </div>
-                        <img
-                            src={logo}
-                            alt="Sefatullah"
-                            className="rounded-full w-40 h-40 mx-auto -mt-20 border-4 border-white shadow-xl"
-                        />
-                        <div className="text-center mt-4 mb-7">
-                            <h1 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                                Mohammad Sefatullah
-                            </h1>
-                            <p className="mt-1 text-gray-600 dark:text-gray-400">
-                                Full Stack Web Developer
-                            </p>
+                        <div className="bg-gray-700 border-b border-gray-600 whitespace-nowrap overflow-x-auto">
+                            <button className="bg-gray-800 px-3 py-1 border-e border-gray-600"><span className="px-1 bg-orange-500 text-black rounded-sm font-bold text-sm me-1">5</span> <span className="text-sm text-gray-400">index.html</span></button>
+                            <button className="px-3 py-1 border-e border-gray-600"><span className="px-0.5 bg-yellow-500 text-black rounded-sm font-bold text-sm me-1">JS</span> <span className="text-sm text-gray-400">app.js</span></button>
+                            <button className="px-3 py-1 border-e border-gray-600"><span className="px-1 bg-[#42a5f5] text-black rounded-sm font-bold text-sm me-1">3</span> <span className="text-sm text-gray-400">style.css</span></button>
+                        </div>
+                        <div className="px-5 py-4 text-white whitespace-nowrap overflow-x-auto">
+                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">1</span><span className="text-gray-400">&lt;</span><span className="text-blue-400">html</span><span className="text-gray-400">&gt;</span><span className="animate-pulse text-white">|</span></p>
+
+                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">2</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">head</span><span className="text-gray-400">&gt;</span></p>
+
+                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">3</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">title</span><span className="text-gray-400">&gt;</span>Sefatullah<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">title</span><span className="text-gray-400">&gt;</span></p>
+
+                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">4</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">head</span><span className="text-gray-400">&gt;</span></p>
+
+                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">5</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">body</span><span className="text-gray-400">&gt;</span></p>
+
+                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">6</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">p <span className="text-blue-200">class=</span><span className="text-orange-400">&quot;paragraph&quot;</span></span><span className="text-gray-400">&gt;</span>Salam!<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">p</span><span className="text-gray-400">&gt;</span></p>
+
+                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">7</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">body</span><span className="text-gray-400">&gt;</span></p>
+
+                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">8</span><span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">html</span><span className="text-gray-400">&gt;</span></p>
+
+                        </div>
+                        <div className="border-t border-gray-600 flex bg-blue-500 rounded-b-lg text-white whitespace-nowrap overflow-x-auto">
+                            <button className="py-0.5 px-2.5 bg-green-700 rounded-bl-lg text-sm font-semibold">&gt;<sup className="inline-block -ml-0.5 scale-[1.3]">&lt;</sup></button>
+                            <div className="ml-auto flex text-sm">
+                                <button className="py-0.5 pe-3 rounded-br-lg">Ln 1, Col 7</button>
+                                <button className="py-0.5 pe-3 rounded-br-lg">Spaces: 2</button>
+                                <button className="py-0.5 pe-3 rounded-br-lg">UTF-8</button>
+                                <button className="py-0.5 pe-3 rounded-br-lg">CRLF</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 {/* ____ SKILLS SECTION */}
                 <div className="__skills-section w-full border-t border-gray-200 dark:border-gray-800 bg-pattern dark:bg-dpattern lg:flex lg:h-full lg:items-center lg:py-0 dark:from-gray-900  bg-gradient-to-r from-white">
-                    <div className="w-full mx-auto p-4 md:px-0 py-14 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-7xl">
+                    <div className="w-full mx-auto p-4 md:px-0 py-14 max-w-5xl">
                         <div className="flex flex-col items-center justify-center mt-7">
                             <img src={skills} className="w-16 h-16" />
                             <h1 className="text-4xl font-semibold text-gray-900 dark:text-white">
@@ -211,7 +225,7 @@ export default function Home({ theme }) {
 
                 {/* ____ SERVICES SECTION */}
                 <div className="__skills-section w-full border-t border-gray-200 dark:border-gray-800 bg-pattern dark:bg-dpattern lg:flex lg:h-full lg:items-center lg:py-0 dark:bg-gray-900 bg-white">
-                    <div className="w-full mx-auto p-4 md:px-0 py-14 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-7xl">
+                    <div className="w-full mx-auto p-4 md:px-0 py-14 max-w-5xl">
                         <div className="flex flex-col items-center justify-center mt-7">
                             <img src={services} className="w-16 h-16" />
                             <h1 className="text-4xl font-semibold text-gray-900 dark:text-white mt-2">
@@ -222,7 +236,7 @@ export default function Home({ theme }) {
                                 services to his clients.
                             </p>
                         </div>
-                        <div className="max-w-[550px] mx-auto sm:p-1 lg:p-5 my-14 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl lg:py-12 text-center text-gray-600 dark:text-gray-400">
+                        <div className="w-full py-6 my-14 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl py-12 text-center text-gray-600 dark:text-gray-400">
                             <p>Please contact him!</p>
                             <Link
                                 to="contact"

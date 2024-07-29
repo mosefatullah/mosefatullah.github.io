@@ -64,7 +64,7 @@ export default function Navbar({ theme, setTheme }) {
        </svg>
       </button>
      </div>
-     <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
+     <div className="flex flex-1 items-center justify-center md:justify-start">
       <Link className="flex space-x-3" to="/">
        <img
         src={logo}
@@ -73,7 +73,7 @@ export default function Navbar({ theme, setTheme }) {
         height="35"
         className="w-auto rounded h-8 bg-gray-300 dark:bg-gray-700"
        />
-       <p className="text-xl text-gray-900 dark:text-white">Sefatullah</p>
+       <p className="text-xl text-gray-900 dark:text-white flex items-center">Sefatullah</p>
       </Link>
      </div>
      <div className="dark:text-white hidden md:ml-6 md:block">
