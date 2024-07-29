@@ -1,14 +1,17 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-
-import Data from "../data/home.js";
+import { motion } from "framer-motion";
+import About from "../components/home/about";
 
 import lightpattern from "../assets/images/pattern_light.svg";
 import darkpattern from "../assets/images/pattern_dark.svg";
-
 import skills from "../assets/images/programming.png";
-import services from "../assets/images/services.png";
+
+/* Utils */
+import Data from "../data/home.js";
+import { fadeAnimation, headContainerAnimation, headContentAnimation, headTextAnimation } from "../utils/motion.js";
+import { schema } from './../data/schema';
 
 export default function Home({ theme }) {
     const homeRef = React.useRef(null);
@@ -31,28 +34,7 @@ export default function Home({ theme }) {
                     data-react-helmet="true"
                 />
                 <script type="application/ld+json" data-react-helmet="true">
-                    {`
-        {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Mohammad Sefatullah",
-        "jobTitle": "Full Stack Web Developer",
-        "description": "Mohammad Sefatullah, a young and promising web designer, developer, and
-        programmer, hails from the Shariatpur District of Bangladesh. Born on
-        September 13th, his passion for coding ignited while he was still in
-        seventh grade. This early spark ignited a dream – to become a software
-        engineer and make a positive impact on his community.",
-        "url": "https://sefatullah.me",
-        "image": "https://sefatullah.com/android-chrome-512x512.png",
-        "sameAs": [
-            "https://www.facebook.com/mosefatullah",
-            "https://www.instagram.com/mosefatullah",
-            "https://www.linkedin.com/in/mosefatullah",
-            "https://www.github.com/mosefatullah",
-            "https://www.twitter.com/mosefatullah"
-        ]
-        }
-        `}
+                    {JSON.stringify(schema)}
                 </script>
             </Helmet>
             <div className="__home" ref={homeRef}>
@@ -65,37 +47,43 @@ export default function Home({ theme }) {
                         minHeight: "calc(100vh - 74px)",
                     }}
                 >
-                    <div className="mb-[5rem] lg:mb-0 pt-6 lg:pt-0">
-                        <h1 className="text-4xl md:text-5xl font-bold leading-relaxed">{Data.hero.header}</h1>
-                        <p className="mt-8 text-gray-600 dark:text-gray-400">
-                            {Data.hero.paragraph}
-                        </p>
-                        <div className="mt-12">
-                            <Link
-                                to="about"
-                                className="px-4 py-3 border-2 dark:border-green-500 dark:text-green-500 rounded-md dark:hover:bg-green-600 dark:hover:text-white dark:hover:border-green-600 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 font-semibold transition duration-300 ease-in-out"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    width="24px"
-                                    height="24px"
-                                    viewBox="0 0 24 24"
-                                    strokeWidth={1.5}
-                                    stroke="currentColor"
-                                    className="mr-2 mt-[-2px] inline-block dark:text-white"
+                    <motion.dev {...headContainerAnimation}>
+                        <div className="mb-[5rem] lg:mb-0 pt-6 lg:pt-0">
+                            <motion.div {...headTextAnimation}>
+                                <h1 className="text-4xl md:text-5xl font-bold leading-relaxed">{Data.hero.header}</h1>
+                            </motion.div>
+                            <motion.div {...headContentAnimation}>
+                                <p className="mt-8 text-gray-600 dark:text-gray-400">
+                                    {Data.hero.paragraph}
+                                </p>
+                            </motion.div>
+                            <div className="mt-12">
+                                <Link
+                                    to="about"
+                                    className="px-4 py-3 border-2 dark:border-green-500 dark:text-green-500 rounded-md dark:hover:bg-green-600 dark:hover:text-white dark:hover:border-green-600 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-500 font-semibold transition duration-300 ease-in-out"
                                 >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
-                                    />
-                                </svg>
-                                {Data.hero.action}
-                            </Link>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        width="24px"
+                                        height="24px"
+                                        viewBox="0 0 24 24"
+                                        strokeWidth={1.5}
+                                        stroke="currentColor"
+                                        className="mr-2 mt-[-2px] inline-block dark:text-white"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                                        />
+                                    </svg>
+                                    {Data.hero.action}
+                                </Link>
+                            </div>
                         </div>
-                    </div>
-                    <div className="boardOfMe bg-gray-800 rounded-xl shadow-xl w-full">
+                    </motion.dev>
+                    <motion.dev {...fadeAnimation} className="boardOfMe bg-gray-800 rounded-xl shadow-xl w-full">
                         <div className="bg-slate-500 p-4 py-2.5 rounded-t-xl flex text-center">
                             <div className="flex gap-2 mt-1">
                                 <div className="w-3 h-3 bg-red-600 rounded-full"></div>
@@ -136,11 +124,11 @@ export default function Home({ theme }) {
                                 <button className="py-0.5 pe-3 rounded-br-lg">CRLF</button>
                             </div>
                         </div>
-                    </div>
+                    </motion.dev>
                 </div>
 
                 {/* ____ SKILLS SECTION */}
-                <div className="__skills-section w-full border-t border-gray-200 dark:border-gray-800 bg-pattern dark:bg-dpattern lg:flex lg:h-full lg:items-center lg:py-0 dark:from-gray-900  bg-gradient-to-r from-white">
+                <div className="__skills-section w-full border-t border-gray-200 dark:border-gray-800 bg-pattern dark:bg-dpattern lg:flex lg:items-center lg:py-0 dark:from-gray-900 bg-gradient-to-r from-white" id="skills-overview">
                     <div className="w-full mx-auto p-4 md:px-8 py-14 max-w-7xl">
                         <div className="flex flex-col items-center justify-center mt-7">
                             <img src={skills} className="w-16 h-16" />
@@ -171,7 +159,10 @@ export default function Home({ theme }) {
                 </div>
 
                 {/* ____ ABOUT SECTION */}
-                <div className="__about-section w-full border-t border-gray-200 dark:border-gray-800 bg-pattern dark:bg-dpattern lg:flex lg:h-full lg:items-center lg:py-0 dark:bg-gray-900 bg-white">
+                <div className="__about-section w-full lg:flex lg:items-center lg:py-0 dark:bg-gray-900 bg-white h-full">
+                    <div className="w-full mx-auto p-4 md:px-8 py-14 max-w-7xl">
+                        <About />
+                    </div>
                 </div>
             </div>
         </>

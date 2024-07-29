@@ -1,8 +1,4 @@
-import React from "react";
 import { Helmet } from "react-helmet";
-
-// Assets
-import me from "../assets/images/sefatullah.jpg";
 
 function Contact() {
     return (

@@ -1,4 +1,3 @@
-import React from "react";
 import { Helmet } from "react-helmet";
 
 // Assets
@@ -20,19 +19,6 @@ function About() {
           data-react-helmet="true"
         />
         <link rel="canonical" href="https://sefatullah.com/?/about" data-react-helmet="true" />
-        <script type="application/ld+json" data-react-helmet="true">
-          {`
-       {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "about": {
-          "@type": "Person",
-          "name": "Mohammad Sefatullah",
-          "sameAs": "https://sefatullah.me"
-        }
-      }
-        `}
-        </script>
       </Helmet>
       {/* ____ HERO SECTION */}
       <div
