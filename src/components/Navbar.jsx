@@ -83,7 +83,7 @@ export default function Navbar({ theme, setTheme }) {
          to={item[1]}
          className={({ isActive }) =>
           isActive
-           ? "bg-gray-700 text-white rounded-md px-3 py-1 text-sm font-medium"
+           ? "bg-gray-300 dark:bg-gray-700 rounded-md px-3 py-1 text-sm font-medium"
            : "hover:bg-gray-700 hover:text-white rounded-md px-3 py-1 text-sm font-medium"
          }
          aria-current="page"
@@ -149,7 +149,7 @@ export default function Navbar({ theme, setTheme }) {
        to={item[1]}
        className={({ isActive }) =>
         isActive
-         ? "bg-gray-700 text-white rounded-md mr-2 px-3 py-1 text-sm font-medium"
+         ? "bg-gray-300 dark:bg-gray-700 rounded-md mr-2 px-3 py-1 text-sm font-medium"
          : "hover:bg-gray-700 hover:text-white rounded-md mr-2 px-3 py-1 text-sm font-medium"
        }
        aria-current="page"
