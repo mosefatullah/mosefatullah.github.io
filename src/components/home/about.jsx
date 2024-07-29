@@ -1,4 +1,5 @@
 import React from "react";
+import Data from "../../data/home";
 
 function About() {
     React.useEffect(() => {
@@ -30,18 +31,13 @@ function About() {
         <>
             <div className="font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
                 <ul className="flex md:justify-center -mb-px whitespace-nowrap overflow-x-auto">
-                    <li className="me-2 lg:me-4">
-                        <button id="button-1" className="_button inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500">Experience</button>
-                    </li>
-                    <li className="me-2 lg:me-4">
-                        <button id="button-2" className="_button inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Skills</button>
-                    </li>
-                    <li className="me-2 lg:me-4">
-                        <button id="button-3" className="_button inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Education</button>
-                    </li>
-                    <li className="me-2 lg:me-4">
-                        <button id="button-4" className="_button inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Certifications</button>
-                    </li>
+                    {Data.about.tabs.map((t, i) => (
+                        <li className="me-2 lg:me-4" key={i}>
+                            <button id={"button-" + (i + 1)} className={"_button inline-block p-4 border-b-2 rounded-t-lg " + (
+                                i == 0 ? "text-blue-600 border-blue-600 active dark:text-blue-500 dark:border-blue-500" : "border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                            )}>{t}</button>
+                        </li>
+                    ))}
                 </ul>
             </div>
             <div className="mt-8 bg-gray-800 w-full h-[200px] p-4 md:p-8">
@@ -52,7 +48,7 @@ function About() {
                     <p>Skills</p>
                 </div>
                 <div id="section3" className="_section hidden">
-                    <p>Educations</p>
+                    <p>Education</p>
                 </div>
                 <div id="section4" className="_section hidden">
                     <p>Certifications</p>

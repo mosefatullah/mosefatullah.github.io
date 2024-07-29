@@ -54,6 +54,7 @@ export default {
   ],
  },
  about: {
+  tabs: ["Experience", "Skills", "Education", "Certifications"],
   experience: {},
  },
 };
