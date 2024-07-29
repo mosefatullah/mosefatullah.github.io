@@ -236,7 +236,7 @@ export default function Home({ theme }) {
                                 services to his clients.
                             </p>
                         </div>
-                        <div className="w-full py-6 my-14 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl py-12 text-center text-gray-600 dark:text-gray-400">
+                        <div className="w-full py-6 my-14 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl md:py-12 text-center text-gray-600 dark:text-gray-400">
                             <p>Please contact him!</p>
                             <Link
                                 to="contact"
