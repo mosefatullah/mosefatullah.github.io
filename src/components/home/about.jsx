@@ -44,7 +44,9 @@ function About() {
                     </li>
                 </ul>
             </div>
+            <div className="mt-8 bg-gray-800 w-full h-[200px]">
 
+            </div>
         </>
     );
 }
