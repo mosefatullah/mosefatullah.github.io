@@ -49,5 +49,8 @@ export default {
   ],
  },
  about: {
+    experience: {
+        
+    }
  },
 };

@@ -10,8 +10,9 @@ import skills from "../assets/images/programming.png";
 
 /* Utils */
 import Data from "../data/home.js";
-import { fadeAnimation, headContainerAnimation, headContentAnimation, headTextAnimation } from "../utils/motion.js";
+import { fadeAnimation, headContainerAnimation, headContentAnimation, headTextAnimation, slideAnimation } from "../utils/motion.js";
 import { schema } from './../data/schema';
+import WithMotion from "../components/WithMotion.jsx";
 
 export default function Home({ theme }) {
     const homeRef = React.useRef(null);
@@ -47,7 +48,7 @@ export default function Home({ theme }) {
                         minHeight: "calc(100vh - 74px)",
                     }}
                 >
-                    <motion.dev {...headContainerAnimation}>
+                    <WithMotion object={headContainerAnimation}>
                         <div className="mb-[5rem] lg:mb-0 pt-6 lg:pt-0">
                             <motion.div {...headTextAnimation}>
                                 <h1 className="text-4xl md:text-5xl font-bold leading-relaxed">{Data.hero.header}</h1>
@@ -82,8 +83,8 @@ export default function Home({ theme }) {
                                 </Link>
                             </div>
                         </div>
-                    </motion.dev>
-                    <motion.dev {...fadeAnimation} className="boardOfMe bg-gray-800 rounded-xl shadow-xl w-full">
+                    </WithMotion>
+                    <WithMotion object={slideAnimation("right")} className="boardOfMe bg-gray-800 rounded-xl shadow-xl w-full">
                         <div className="bg-slate-500 p-4 py-2.5 rounded-t-xl flex text-center">
                             <div className="flex gap-2 mt-1">
                                 <div className="w-3 h-3 bg-red-600 rounded-full"></div>
@@ -124,12 +125,12 @@ export default function Home({ theme }) {
                                 <button className="py-0.5 pe-3 rounded-br-lg">CRLF</button>
                             </div>
                         </div>
-                    </motion.dev>
+                    </WithMotion>
                 </div>
 
                 {/* ____ SKILLS SECTION */}
                 <div className="__skills-section w-full border-t border-gray-200 dark:border-gray-800 bg-pattern dark:bg-dpattern lg:flex lg:items-center lg:py-0 dark:from-gray-900 bg-gradient-to-r from-white" id="skills-overview">
-                    <div className="w-full mx-auto p-4 md:px-8 py-14 max-w-7xl">
+                    <WithMotion object={slideAnimation("up")} className="w-full mx-auto p-4 md:px-8 py-14 max-w-7xl">
                         <div className="flex flex-col items-center justify-center mt-7">
                             <img src={skills} className="w-16 h-16" />
                             <h1 className="text-4xl font-semibold text-gray-900 dark:text-white">
@@ -155,7 +156,7 @@ export default function Home({ theme }) {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </WithMotion>
                 </div>
 
                 {/* ____ ABOUT SECTION */}
