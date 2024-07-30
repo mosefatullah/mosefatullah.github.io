@@ -26,7 +26,7 @@ function About() {
     return (
         <div className="bg-white dark:bg-slate-800 pt-4 rounded-lg shadow-md dark:shadow-xl">
             <div className="font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
-                <ul className="flex px-4 lg:px-6 -mb-px whitespace-nowrap overflow-x-auto">
+                <ul className="flex md:px-4 lg:px-6 -mb-px whitespace-nowrap overflow-x-auto">
                     {Data.overview.about.tabs.map((t, i) => (
                         <li className="me-2 lg:me-4" key={i}>
                             <button id={"button-" + (i + 1)} className={"_button inline-block p-4 border-b-2 " + (
@@ -41,7 +41,7 @@ function About() {
                     {
                         Data.overview.about.experiences.map((e, i) => (
                             <WithMotion key={i} object={{ animate: { opacity: 1, y: 0 }, initial: { opacity: 0, y: 50 }, transition: { duration: 0.5 } }} className="relative border-b border-gray-200 dark:border-slate-700">
-                                <div className="py-5 px-7 md:flex md:gap-6">
+                                <div className="py-5 px-3 md:px-7 md:flex md:gap-6">
                                     <img src={e.logo} alt="Experience" className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-md md:ring-9 md:ring-white md:dark:ring-gray-900 dark:bg-blue-900 mb-4 md:mb-0" />
                                     <div>
                                         <h3 className="mb-1 flex items-center text-xl font-semibold text-gray-900 dark:text-white">{e.company}</h3>
@@ -60,7 +60,7 @@ function About() {
                     {
                         Data.overview.about.skills.map((s, i) => (
                             <WithMotion key={i} object={{ animate: { opacity: 1, y: 0 }, initial: { opacity: 0, y: 50 }, transition: { duration: 0.5 } }} className="relative border-b border-gray-200 dark:border-slate-700">
-                                <div className="py-5 px-7 md:flex md:gap-6">
+                                <div className="py-5 px-3 md:px-7 md:flex md:gap-6">
                                     <img src={s.logo} alt="Skill" className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-md md:ring-9 md:ring-white md:dark:ring-gray-900 dark:bg-blue-900 mb-4 md:mb-0" />
                                     <div>
                                         <h3 className="mb-1 flex items-center text-xl font-semibold text-gray-900 dark:text-white">{s.skill}</h3>
@@ -75,7 +75,7 @@ function About() {
                     {
                         Data.overview.about.education.map((e, i) => (
                             <WithMotion key={i} object={{ animate: { opacity: 1, y: 0 }, initial: { opacity: 0, y: 50 }, transition: { duration: 0.5 } }} className="relative border-b border-gray-200 dark:border-slate-700">
-                                <div className="py-5 px-7 md:flex md:gap-6">
+                                <div className="py-5 px-3 md:px-7 md:flex md:gap-6">
                                     <img src={e.logo} alt="Education" className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-md md:ring-9 md:ring-white md:dark:ring-gray-900 dark:bg-blue-900 mb-4 md:mb-0" />
                                     <div>
                                         <h3 className="mb-1 flex items-center text-xl font-semibold text-gray-900 dark:text-white">{e.institution}</h3>
@@ -95,7 +95,7 @@ function About() {
                     {
                         Data.overview.about.certifications.map((e, i) => (
                             <WithMotion key={i} object={{ animate: { opacity: 1, y: 0 }, initial: { opacity: 0, y: 50 }, transition: { duration: 0.5 } }} className="relative border-b border-gray-200 dark:border-slate-700">
-                                <div className="py-5 px-7 md:flex md:gap-6">
+                                <div className="py-5 px-3 md:px-7 md:flex md:gap-6">
                                     <img src={e.logo} alt="Education" className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-md md:ring-9 md:ring-white md:dark:ring-gray-900 dark:bg-blue-900 mb-4 md:mb-0" />
                                     <div>
                                         <h3 className="mb-1 flex items-center text-xl font-semibold text-gray-900 dark:text-white">{e.title}</h3>
