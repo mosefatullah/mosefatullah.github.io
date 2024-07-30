@@ -4,7 +4,7 @@ import Data from "../../data/home";
 
 function About() {
     React.useEffect(() => {
-        var a = document.querySelectorAll("button");
+        var a = document.querySelectorAll("._button");
         if (a) {
             for (let e = 0; e < a.length; e++)
                 a[e].onclick = function () {
