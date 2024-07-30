@@ -3,12 +3,12 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Typewriter from 'typewriter-effect/dist/core';
+import Tilt from 'react-parallax-tilt';
 
 import About from "../components/home/about";
 
 import lightpattern from "../assets/images/pattern_light.svg";
 import darkpattern from "../assets/images/pattern_dark.svg";
-import skills from "../assets/images/programming.png";
 
 /* Utils */
 import Data from "../data/home.js";
@@ -108,48 +108,54 @@ export default function Home({ theme }) {
                             </div>
                         </div>
                     </WithMotion>
-                    <WithMotion object={slideAnimation("right")} className="boardOfMe bg-gray-800 rounded-xl shadow-xl w-full">
-                        <div className="bg-slate-500 p-4 py-2.5 rounded-t-xl flex text-center">
-                            <div className="flex gap-2 mt-1">
-                                <div className="w-3 h-3 bg-red-600 rounded-full"></div>
-                                <div className="w-3 h-3 bg-yellow-600 rounded-full"></div>
-                                <div className="w-3 h-3 bg-green-600 rounded-full"></div>
+                    <Tilt
+                        perspective={1200}
+                        glareMaxOpacity={0}
+                        trackOnWindow={true}
+                        className="boardOfMe bg-gray-800 rounded-xl shadow-xl w-full">
+                        <WithMotion object={slideAnimation("right")}>
+                            <div className="bg-slate-500 p-4 py-2.5 rounded-t-xl flex text-center">
+                                <div className="flex gap-2 mt-1">
+                                    <div className="w-3 h-3 bg-red-600 rounded-full"></div>
+                                    <div className="w-3 h-3 bg-yellow-600 rounded-full"></div>
+                                    <div className="w-3 h-3 bg-green-600 rounded-full"></div>
+                                </div>
+                                <p className="text-sm text-gray-300 w-full p-0">Visual Studio Code</p>
                             </div>
-                            <p className="text-sm text-gray-300 w-full p-0">Visual Studio Code</p>
-                        </div>
-                        <div className="bg-gray-700 border-b border-gray-600 whitespace-nowrap overflow-x-auto">
-                            <button className="bg-gray-800 px-3 py-1 border-e border-gray-600"><span className="px-1 bg-orange-500 text-black rounded-sm font-bold text-sm me-1">5</span> <span className="text-sm text-gray-400">index.html</span></button>
-                            <button className="px-3 py-1 border-e border-gray-600"><span className="px-0.5 bg-yellow-500 text-black rounded-sm font-bold text-sm me-1">JS</span> <span className="text-sm text-gray-400">app.js</span></button>
-                            <button className="px-3 py-1 border-e border-gray-600"><span className="px-1 bg-[#42a5f5] text-black rounded-sm font-bold text-sm me-1">3</span> <span className="text-sm text-gray-400">style.css</span></button>
-                        </div>
-                        <div className="px-5 py-4 text-white whitespace-nowrap overflow-x-auto">
-                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">1</span><span className="text-gray-400">&lt;</span><span className="text-blue-400">html</span><span className="text-gray-400">&gt;</span><span className="animate-pulse text-white">|</span></p>
-
-                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">2</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">head</span><span className="text-gray-400">&gt;</span></p>
-
-                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">3</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">title</span><span className="text-gray-400">&gt;</span>Untitled<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">title</span><span className="text-gray-400">&gt;</span></p>
-
-                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">4</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">head</span><span className="text-gray-400">&gt;</span></p>
-
-                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">5</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">body</span><span className="text-gray-400">&gt;</span></p>
-
-                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">6</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">p <span className="text-blue-200">class=</span><span className="text-orange-400">&quot;paragraph&quot;</span></span><span className="text-gray-400">&gt;</span>Salam!<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">p</span><span className="text-gray-400">&gt;</span></p>
-
-                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">7</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">body</span><span className="text-gray-400">&gt;</span></p>
-
-                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">8</span><span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">html</span><span className="text-gray-400">&gt;</span></p>
-
-                        </div>
-                        <div className="border-t border-gray-600 flex bg-blue-500 rounded-b-lg text-white whitespace-nowrap overflow-x-auto">
-                            <button className="py-0.5 px-2.5 bg-green-700 rounded-bl-lg text-sm font-semibold">&gt;<sup className="inline-block -ml-0.5 scale-[1.3]">&lt;</sup></button>
-                            <div className="ml-auto flex text-sm">
-                                <button className="py-0.5 pe-3 rounded-br-lg">Ln 1, Col 7</button>
-                                <button className="py-0.5 pe-3 rounded-br-lg">Spaces: 2</button>
-                                <button className="py-0.5 pe-3 rounded-br-lg">UTF-8</button>
-                                <button className="py-0.5 pe-3 rounded-br-lg">CRLF</button>
+                            <div className="bg-gray-700 border-b border-gray-600 whitespace-nowrap overflow-x-auto">
+                                <button className="bg-gray-800 px-3 py-1 border-e border-gray-600"><span className="px-1 bg-orange-500 text-black rounded-sm font-bold text-sm me-1">5</span> <span className="text-sm text-gray-400">index.html</span></button>
+                                <button className="px-3 py-1 border-e border-gray-600"><span className="px-0.5 bg-yellow-500 text-black rounded-sm font-bold text-sm me-1">JS</span> <span className="text-sm text-gray-400">app.js</span></button>
+                                <button className="px-3 py-1 border-e border-gray-600"><span className="px-1 bg-[#42a5f5] text-black rounded-sm font-bold text-sm me-1">3</span> <span className="text-sm text-gray-400">style.css</span></button>
                             </div>
-                        </div>
-                    </WithMotion>
+                            <div className="px-5 py-4 text-white whitespace-nowrap overflow-x-auto">
+                                <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">1</span><span className="text-gray-400">&lt;</span><span className="text-blue-400">html</span><span className="text-gray-400">&gt;</span><span className="animate-pulse text-white">|</span></p>
+
+                                <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">2</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">head</span><span className="text-gray-400">&gt;</span></p>
+
+                                <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">3</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">title</span><span className="text-gray-400">&gt;</span>Untitled<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">title</span><span className="text-gray-400">&gt;</span></p>
+
+                                <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">4</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">head</span><span className="text-gray-400">&gt;</span></p>
+
+                                <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">5</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">body</span><span className="text-gray-400">&gt;</span></p>
+
+                                <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">6</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">p <span className="text-blue-200">class=</span><span className="text-orange-400">&quot;paragraph&quot;</span></span><span className="text-gray-400">&gt;</span>Salam!<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">p</span><span className="text-gray-400">&gt;</span></p>
+
+                                <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">7</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">body</span><span className="text-gray-400">&gt;</span></p>
+
+                                <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">8</span><span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">html</span><span className="text-gray-400">&gt;</span></p>
+
+                            </div>
+                            <div className="border-t border-gray-600 flex bg-blue-500 rounded-b-lg text-white whitespace-nowrap overflow-x-auto">
+                                <button className="py-0.5 px-2.5 bg-green-700 rounded-bl-lg text-sm font-semibold">&gt;<sup className="inline-block -ml-0.5 scale-[1.3]">&lt;</sup></button>
+                                <div className="ml-auto flex text-sm">
+                                    <button className="py-0.5 pe-3 rounded-br-lg">Ln 1, Col 7</button>
+                                    <button className="py-0.5 pe-3 rounded-br-lg">Spaces: 2</button>
+                                    <button className="py-0.5 pe-3 rounded-br-lg">UTF-8</button>
+                                    <button className="py-0.5 pe-3 rounded-br-lg">CRLF</button>
+                                </div>
+                            </div>
+                        </WithMotion>
+                    </Tilt>
                 </div>
 
                 {/* ____ INTRO SECTION */}
