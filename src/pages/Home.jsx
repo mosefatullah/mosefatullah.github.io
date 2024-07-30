@@ -75,7 +75,7 @@ export default function Home({ theme }) {
                     <WithMotion object={headContainerAnimation}>
                         <div className="mb-[3rem] lg:mb-0 pt-6 lg:pt-0">
                             <motion.div {...headTextAnimation}>
-                                <h1 className="text-4xl md:text-5xl font-bold lg:leading-[3.5rem] font-special">{Data.hero.headerP1}<br /><span id="h">{Data.hero.headerP2[0]}</span></h1>
+                                <h1 className="text-4xl md:text-5xl font-bold lg:leading-[3.5rem]">{Data.hero.headerP1}<br /><span className="" id="h">{Data.hero.headerP2[0]}</span></h1>
                             </motion.div>
                             <motion.div {...headContentAnimation}>
                                 <p className="mt-8 text-gray-600 dark:text-gray-400">

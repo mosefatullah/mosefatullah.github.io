@@ -6,8 +6,7 @@ export default {
  theme: {
   extend: {
    fontFamily: {
-    sans: ["Inter", ...defaultTheme.fontFamily.sans],
-    special: ["Cardo", ...defaultTheme.fontFamily.sans],
+    sans: ["Inter", ...defaultTheme.fontFamily.sans]
    },
    colors: {
     primary: {
