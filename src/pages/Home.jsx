@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, transform } from "framer-motion";
 import Typewriter from 'typewriter-effect/dist/core';
 import Tilt from 'react-parallax-tilt';
 
@@ -12,7 +12,7 @@ import darkpattern from "../assets/images/pattern_dark.svg";
 
 /* Utils */
 import Data from "../data/home.js";
-import { headContainerAnimation, headContentAnimation, headTextAnimation, slideAnimation } from "../utils/motion.js";
+import { fadeAnimation, headContainerAnimation, headContentAnimation, headTextAnimation, slideAnimation } from "../utils/motion.js";
 import { schema } from './../data/schema';
 import WithMotion from "../components/WithMotion.jsx";
 
@@ -108,12 +108,19 @@ export default function Home({ theme }) {
                             </div>
                         </div>
                     </WithMotion>
-                    <Tilt
-                        perspective={1200}
-                        glareMaxOpacity={0}
-                        trackOnWindow={true}
-                        className="boardOfMe bg-gray-800 rounded-xl shadow-xl w-full">
-                        <WithMotion object={slideAnimation("right")}>
+                    <WithMotion object={{
+                        animate: {
+                            rotate: [0, 0, 5, 0, -2, 0, 0]
+                        },
+                        transition: { repeat: Infinity, duration: 2 }
+                    }}
+                        className="w-full"
+                    >
+                        <Tilt
+                            perspective={1200}
+                            glareMaxOpacity={0}
+                            trackOnWindow={true}
+                            className="boardOfMe bg-gray-800 rounded-xl shadow-xl w-full">
                             <div className="bg-slate-500 p-4 py-2.5 rounded-t-xl flex text-center">
                                 <div className="flex gap-2 mt-1">
                                     <div className="w-3 h-3 bg-red-600 rounded-full"></div>
@@ -154,8 +161,8 @@ export default function Home({ theme }) {
                                     <button className="py-0.5 pe-3 rounded-br-lg">CRLF</button>
                                 </div>
                             </div>
-                        </WithMotion>
-                    </Tilt>
+                        </Tilt>
+                    </WithMotion>
                 </div>
 
                 {/* ____ INTRO SECTION */}
@@ -204,9 +211,10 @@ export default function Home({ theme }) {
                                 </div>
                             </div>
                         </WithMotion>
-                        <div className="max-w-4xl mx-auto">
-                            <About />
-                        </div>
+                        <WithMotion object={slideAnimation("up")}>
+                            <div className="max-w-4xl mx-auto">
+                                <About />
+                            </div></WithMotion>
                     </WithMotion>
 
                     {/* ____ COUNTER SECTION
