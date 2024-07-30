@@ -39,7 +39,7 @@ function About() {
                 </ul>
             </div>
             <div className="py-7 rounded-b-lg bg-white dark:bg-slate-800">
-                <div id="section1" className="_section">
+                <div id="section1" className="_section px-4">
                     {
                         Data.overview.about.experiences.map((e, i) => (
                             <WithMotion key={i} object={{ animate: { opacity: 1, y: 0 }, initial: { opacity: 0, y: 50 }, transition: { duration: 0.5 } }} className="relative border-b border-gray-200 dark:border-slate-700">
