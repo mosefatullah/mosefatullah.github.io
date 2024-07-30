@@ -172,30 +172,29 @@ export default {
      logo:
       "https://media.licdn.com/dms/image/D4D0BAQEE6MTIJ9LvcA/company-logo_100_100/0/1700458372087/ycibd22_logo?e=1730332800&v=beta&t=v_0pLgT52SWHm1gVRC2R93duxMZd71VLTh-0v7tXCWs",
      duration: "Jul 2024",
-     skills: "Communication, Leadership, Problem Solving, Public Speaking, Team Work, Critical Thinking, Emotional intelligence",
+     skills:
+      "Communication, Leadership, Problem Solving, Public Speaking, Team Work, Critical Thinking, Emotional intelligence",
      certificate_img:
       "https://media.licdn.com/dms/image/D562DAQE_uz-SfGDdHg/profile-treasury-document-cover-images_480/0/1722230481195?e=1722942000&v=beta&t=M8Q1NV3GHHPGMfsCueuRi1JFFwd79f3rZNUERSZ_dsM",
     },
     {
-        title: "Frontend Developer (React)",
+     title: "Frontend Developer (React)",
      provider: "HackerRank",
      logo:
       "https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_100_100/0/1705561459405/hackerrank_logo?e=1730332800&v=beta&t=qxXB3JPOp27h8U2XoQ3PUxKSrM_7O90t2vfzfxIgyEo",
      duration: "Apr 2024",
      skills: "React.js, Front-End Development",
-     certificate_link:
-      "https://www.hackerrank.com/certificates/f076d72d71d0",
+     certificate_link: "https://www.hackerrank.com/certificates/f076d72d71d0",
     },
     {
-        title: "JavaScript (Intermediate)",
+     title: "JavaScript (Intermediate)",
      provider: "HackerRank",
      logo:
       "https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_100_100/0/1705561459405/hackerrank_logo?e=1730332800&v=beta&t=qxXB3JPOp27h8U2XoQ3PUxKSrM_7O90t2vfzfxIgyEo",
      duration: "Apr 2024",
-     skills: "React.js, Front-End Development",
-     certificate_link:
-      "https://www.hackerrank.com/certificates/9d9bc3e2530e",
-    }
+     skills: "JavaScript, Programming",
+     certificate_link: "https://www.hackerrank.com/certificates/9d9bc3e2530e",
+    },
    ],
   },
  },
