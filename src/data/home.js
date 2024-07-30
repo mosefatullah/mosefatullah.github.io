@@ -6,13 +6,13 @@ export default {
    "A Web Developer!",
    "A Programmer!",
    "A Web Designer!",
-   "A Fullstack Web Developer!"
+   "A Fullstack Web Developer!",
   ],
   paragraph:
    "Sefatullah, also known as Mohammad Sefatullah, is a professional full stack web developer from Bangladesh born in 2006. He dreams of becoming a software engineer and passionate coding leader. He is trying to get involved in various extra curricular activities with the vision of making a positive impact on the society.",
   action: "Learn More",
  },
- skills: {
+ overview: {
   heading: "Overview",
   paragraph:
    "Sefatullah have learned many programming languages and frameworks. He is continuously learning and practicing coding.",
@@ -54,7 +54,6 @@ export default {
     icon: "https://img.icons8.com/color/96/000000/mongodb.png",
    },
   ],
- },
  about: {
   tabs: ["Experience", "Skills", "Education", "Certifications"],
   experience: [
@@ -100,5 +99,6 @@ export default {
    },
   ],
   skill: [],
+ },
  },
 };

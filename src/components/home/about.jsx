@@ -26,8 +26,8 @@ function About() {
     return (
         <div className="bg-white dark:bg-slate-800 pt-4 rounded-lg shadow-md dark:shadow-xl">
             <div className="font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
-                <ul className="flex md:justify-center -mb-px whitespace-nowrap overflow-x-auto">
-                    {Data.about.tabs.map((t, i) => (
+                <ul className="flex px-4 lg:px-6 -mb-px whitespace-nowrap overflow-x-auto">
+                    {Data.overview.about.tabs.map((t, i) => (
                         <li className="me-2 lg:me-4" key={i}>
                             <button id={"button-" + (i + 1)} className={"_button inline-block p-4 border-b-2 " + (
                                 i == 0 ? "text-blue-600 border-blue-600 active dark:text-blue-500 dark:border-blue-500" : "border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
@@ -39,7 +39,7 @@ function About() {
             <div className="py-7 rounded-b-lg bg-white dark:bg-slate-800">
                 <div id="section1" className="_section">
                     {
-                        Data.about.experience.map((e, i) => (
+                        Data.overview.about.experience.map((e, i) => (
                             <WithMotion key={i} object={{ animate: { opacity: 1, y: 0 }, initial: { opacity: 0, y: 50 }, transition: { duration: 0.5 } }} className="relative border-b border-gray-200 dark:border-slate-700">
                                 <div className="py-5 px-7 md:flex md:gap-6">
                                     <img src={e.logo} alt="Experience" className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-md md:ring-9 md:ring-white md:dark:ring-gray-900 dark:bg-blue-900 mb-4 md:mb-0" />

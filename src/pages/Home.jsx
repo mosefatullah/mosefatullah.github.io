@@ -56,7 +56,7 @@ export default function Home({ theme }) {
 
             <motion.div
                 transition={{ repeat: Infinity, delay: 2, duration: 2, repeatType: "reverse" }}
-                animate={{ rotate: 360, opacity: 0 }} className="_sketch absolute top-[80vh] right-10 opacity-50"
+                animate={{ rotate: 360, opacity: 0 }} className="_sketch absolute top-[80vh] right-10 opacity-50 hidden lg:block"
             >
                 <svg fill="none" height="44" viewBox="0 0 68 68" width="44" xmlns="http://www.w3.org/2000/svg"><path d="m29.201 4.40976c1.4024-4.795399 8.1956-4.795399 9.598 0l4.8413 16.55444c.4787 1.6368 1.7587 2.9168 3.3955 3.3955l16.5544 4.8413c4.7954 1.4024 4.7954 8.1956 0 9.598l-16.5544 4.8413c-1.6368.4787-2.9168 1.7587-3.3955 3.3955l-4.8413 16.5544c-1.4024 4.7954-8.1956 4.7954-9.598 0l-4.8413-16.5544c-.4787-1.6368-1.7587-2.9168-3.3955-3.3955l-16.55444-4.8413c-4.795399-1.4024-4.795399-8.1956 0-9.598l16.55444-4.8413c1.6368-.4787 2.9168-1.7587 3.3955-3.3955z" fill="#fff" /></svg>
             </motion.div>
@@ -152,15 +152,32 @@ export default function Home({ theme }) {
                     </WithMotion>
                 </div>
 
+                {/* ____ INTRO SECTION */}
+                <WithMotion object={slideAnimation("up")} className="__intro-section w-full mx-auto p-4 md:px-8 py-14 max-w-7xl" id="intro">
+                    <div className="flex flex-col md:flex-row gap-4 lg:gap-8">
+                        <WithMotion object={slideAnimation("left")} className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4">
+                        </WithMotion>
+                        <WithMotion object={slideAnimation("right")} className="bg-white shadow lg:w-[60vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4">
+                        </WithMotion>
+                    </div>
+                    <div className="mt-8 lg:mt-[70px] flex flex-col md:flex-row gap-4 lg:gap-8">
+                        <WithMotion object={slideAnimation("left")} className="bg-white shadow lg:w-[60vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4">
+                        </WithMotion>
+                        <WithMotion object={slideAnimation("right")} className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4">
+                        </WithMotion>
+                    </div>
+                </WithMotion>
+
                 <div className="w-full border-t border-gray-200 dark:border-0 bg-pattern dark:bg-dpattern lg:py-5 dark:from-gray-900 bg-gradient-to-r from-white">
-                    {/* ____ SKILLS SECTION */}
-                    <WithMotion object={slideAnimation("up")} className="__skills-section w-full mx-auto p-4 md:px-8 py-14 max-w-7xl" id="skills-overview">
+
+                    {/* ____ OVERVIEW SECTION */}
+                    <WithMotion object={slideAnimation("up")} className="__overview-section w-full mx-auto p-4 md:px-8 py-14 max-w-7xl" id="overview">
                         <div className="flex flex-col items-center justify-center mt-7">
                             <h1 className="text-4xl lg:text-7xl font-semibold text-gray-900 dark:text-white">
-                                {Data.skills.heading}
+                                {Data.overview.heading}
                             </h1>
                             <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl text-center">
-                                {Data.skills.paragraph}
+                                {Data.overview.paragraph}
                             </p>
                         </div>
                         <WithMotion object={slideAnimation("up")}>
@@ -168,7 +185,7 @@ export default function Home({ theme }) {
                                 <div className="flex flex-col items-center justify-center">
                                     <div className="flex flex-wrap justify-center items-center py-7 space-x-3">
                                         {
-                                            Data.skills.lists.map((item, index) => (
+                                            Data.overview.lists.map((item, index) => (
                                                 <div className="flex flex-col items-center justify-center p-4" key={index}>
                                                     <img
                                                         src={item.icon}
@@ -181,15 +198,11 @@ export default function Home({ theme }) {
                                 </div>
                             </div>
                         </WithMotion>
-                    </WithMotion>
-                    {/* ____ ABOUT SECTION */}
-                    <div className="__about-section w-full mx-auto p-4 md:px-8"
-                        id="about
-                    ">
                         <div className="max-w-4xl mx-auto">
                             <About />
                         </div>
-                    </div>
+                    </WithMotion>
+
                     {/* ____ COUNTER SECTION
                     <div className="__about-section w-full mx-auto bg-[url('https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?cs=srgb&dl=pexels-pixabay-270404.jpg&fm=jpg')] bg-cover bg-center bg-no-repeat bg-fixed"
                         id="about
@@ -201,7 +214,7 @@ export default function Home({ theme }) {
                         </div>
                     </div> */}
                 </div>
-            </div>
+            </div >
         </>
     );
 }
