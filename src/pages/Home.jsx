@@ -53,11 +53,11 @@ export default function Home({ theme }) {
                 <div
                     className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-9 p-4 py-7 justify-items-center items-center relative md:px-8"
                     style={{
-                        minHeight: "calc(100vh - 74px)",
+                        minHeight: "calc(100vh - 150px)",
                     }}
                 >
                     <WithMotion object={headContainerAnimation}>
-                        <div className="mb-[5rem] lg:mb-0 pt-6 lg:pt-0">
+                        <div className="mb-[3rem] lg:mb-0 pt-6 lg:pt-0">
                             <motion.div {...headTextAnimation}>
                                 <h1 className="text-4xl md:text-5xl font-bold lg:leading-[3.5rem]">{Data.hero.headerP1}&nbsp;<span id="h">{Data.hero.headerP2[0]}</span></h1>
                             </motion.div>
@@ -136,9 +136,9 @@ export default function Home({ theme }) {
                     </WithMotion>
                 </div>
 
-                {/* ____ SKILLS SECTION */}
-                <div className="__skills-section w-full border-t border-gray-200 dark:border-gray-800 bg-pattern dark:bg-dpattern lg:flex lg:items-center lg:py-0 dark:from-gray-900 bg-gradient-to-r from-white" id="skills-overview">
-                    <WithMotion object={slideAnimation("up")} className="w-full mx-auto p-4 md:px-8 py-14 max-w-7xl">
+                <div className="w-full border-t border-gray-200 dark:border-0 bg-pattern dark:bg-dpattern lg:py-5 dark:from-gray-900 bg-gradient-to-r from-white">
+                    {/* ____ SKILLS SECTION */}
+                    <WithMotion object={slideAnimation("up")} className="__skills-section w-full mx-auto p-4 md:px-8 py-14 max-w-7xl" id="skills-overview">
                         <div className="flex flex-col items-center justify-center mt-7">
                             <img src={skills} className="w-16 h-16" />
                             <h1 className="text-4xl font-semibold text-gray-900 dark:text-white">
@@ -165,11 +165,8 @@ export default function Home({ theme }) {
                             </div>
                         </div>
                     </WithMotion>
-                </div>
-
-                {/* ____ ABOUT SECTION */}
-                <div className="__about-section w-full lg:flex lg:items-center lg:py-0 dark:bg-gray-900 bg-white h-full">
-                    <div className="w-full mx-auto p-4 md:px-8 py-14 max-w-7xl">
+                    {/* ____ ABOUT SECTION */}
+                    <div className="__about-section w-full mx-auto p-4 md:px-8 py-14 max-w-4xl">
                         <About />
                     </div>
                 </div>

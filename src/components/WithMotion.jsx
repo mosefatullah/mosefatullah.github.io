@@ -2,7 +2,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 import { useEffect } from 'react';
 
-export default function WithMotion({ children, object, className }) {
+export default function WithMotion({ children, object, className, id }) {
     const controls = useAnimation();
     const [ref, inView] = useInView();
 
@@ -18,6 +18,7 @@ export default function WithMotion({ children, object, className }) {
             animate={controls}
             ref={ref}
             className={className}
+            id={id}
         >
             {children}
         </motion.div>

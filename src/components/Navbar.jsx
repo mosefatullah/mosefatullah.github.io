@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/mohammadsefatullah.png";
 
 export default function Navbar({ theme, setTheme }) {
-  const [openNav, setOpenNav] = React.useState(true);
+  const [openNav, setOpenNav] = React.useState(false);
   const navMenu = [
     ["Home", "/"],
     ["About", "/about"],
@@ -21,10 +21,33 @@ export default function Navbar({ theme, setTheme }) {
     });
   }, []);
 
+  const navActive = () => {
+    document.getElementById("navbar").classList.add("bg-slate-100", "dark:bg-gray-800", "shadow-md");
+    document.getElementById("navbar").classList.remove("bg-transparent");
+  }
+
+  const navInactive = () => {
+    document.getElementById("navbar").classList.add("bg-transparent");
+    document.getElementById("navbar").classList.remove("bg-slate-100", "dark:bg-gray-800", "shadow-md");
+  }
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (document.getElementById("mobile-menu").hidden == true) {
+        if (window.scrollY > 50) {
+          navActive();
+        } else {
+          navInactive();
+        }
+      } else {
+        navActive();
+      }
+    });
+  }, []);
   return (
     <>
-      <nav className="bg-slate-100 shadow-md p-4 dark:bg-gray-800 sticky top-0 z-50">
-        <div className="mx-auto max-w-7xl sm:px-3 lg:px-8">
+      <nav className="bg-transparent pb-4 pt-5 sticky top-0 z-50 transition-all duration-300" id="navbar">
+        <div className="mx-auto max-w-7xl px-1.5 sm:px-3 lg:px-8">
           <div className="relative flex items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
               <button
@@ -32,7 +55,14 @@ export default function Navbar({ theme, setTheme }) {
                 className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 dark:focus:ring-indigo-500"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
-                onClick={() => setOpenNav(!openNav)}
+                onClick={() => {
+                  setOpenNav(!openNav)
+                  if (openNav == false) {
+                    navActive();
+                  } else {
+                    navInactive();
+                  }
+                }}
               >
                 <span className="absolute -inset-0.5"></span>
                 <span className="sr-only">Open menu</span>
@@ -68,7 +98,10 @@ export default function Navbar({ theme, setTheme }) {
             </div>
             <div className="flex flex-1 items-center justify-center lg:justify-start">
               <Link className="flex space-x-3" to="/"
-                onClick={() => setOpenNav(!openNav)}>
+                onClick={() => {
+                  setOpenNav(false)
+                  navInactive();
+                }}>
                 <img
                   src={logo}
                   alt=""
@@ -145,7 +178,7 @@ export default function Navbar({ theme, setTheme }) {
           </div>
         </div>
 
-        <div className="lg:hidden" id="mobile-menu" hidden={openNav}>
+        <div className="lg:hidden" id="mobile-menu" hidden={openNav == false}>
           <div className="dark:text-white space-y-1 px-2 pt-8 nav-menu-items ">
             {navMenu.map((item, index) => (
               <NavLink
@@ -157,7 +190,10 @@ export default function Navbar({ theme, setTheme }) {
                 }
                 aria-current="page"
                 key={index}
-                onClick={() => setOpenNav(!openNav)}
+                onClick={() => {
+                  setOpenNav(false)
+                  navInactive();
+                }}
               >
                 {item[0]}
               </NavLink>
@@ -220,6 +256,11 @@ export default function Navbar({ theme, setTheme }) {
           </div>
         </div>
       </nav>
-      <div className="fixed inset-0 bg-black bg-opacity-50 z-40" hidden={openNav}></div></>
+      <div className="fixed inset-0 bg-black bg-opacity-50 z-40" hidden={openNav == false} onClick={
+        () => {
+          setOpenNav(false)
+          navInactive();
+        }
+      }></div></>
   );
 }
