@@ -166,9 +166,23 @@ export default function Home({ theme }) {
                         </div>
                     </WithMotion>
                     {/* ____ ABOUT SECTION */}
-                    <div className="__about-section w-full mx-auto p-4 md:px-8 py-14 max-w-4xl">
-                        <About />
+                    <div className="__about-section w-full mx-auto p-4 md:px-8"
+                        id="about
+                    ">
+                        <div className="max-w-4xl mx-auto">
+                            <About />
+                        </div>
                     </div>
+                    {/* ____ COUNTER SECTION
+                    <div className="__about-section w-full mx-auto bg-[url('https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?cs=srgb&dl=pexels-pixabay-270404.jpg&fm=jpg')] bg-cover bg-center bg-no-repeat bg-fixed"
+                        id="about
+                    ">
+                        <div className="w-full h-full bg-black bg-opacity-50 p-4 md:px-8 py-14 backdrop-blur-md bg-black/30">
+                            <div className="max-w-4xl mx-auto">
+                                
+                            </div>
+                        </div>
+                    </div> */}
                 </div>
             </div>
         </>

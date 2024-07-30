@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -6,8 +5,8 @@ export default function Footer() {
   <div className="bg-slate-200 dark:bg-gray-800">
    <div className="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
     <div className="xl:grid xl:grid-cols-2 xl:gap-8">
-     <div className="grid grid-cols-2 gap-8 xl:col-span-2">
-      <div className="md:grid md:grid-cols-2 md:gap-8">
+     <div className="md:grid md:grid-cols-2 md:gap-8 xl:col-span-2">
+      <div className="grid grid-cols-2 gap-8">
        <div>
         <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-600 dark:text-white uppercase">
          Website
@@ -47,7 +46,7 @@ export default function Footer() {
          </li>
         </ul>
        </div>
-       <div className="mt-12 md:mt-0">
+       <div>
         <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-600 dark:text-white uppercase">
          Social Media
         </h4>

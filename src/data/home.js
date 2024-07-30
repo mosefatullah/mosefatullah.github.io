@@ -11,7 +11,7 @@ export default {
   action: "Learn More",
  },
  skills: {
-  heading: "Skills Overview",
+  heading: "Overview",
   paragraph:
    "Sefatullah have learned many programming languages and frameworks. He is continuously learning and practicing coding.",
   lists: [
