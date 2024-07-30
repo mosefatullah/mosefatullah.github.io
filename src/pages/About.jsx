@@ -28,7 +28,7 @@ function About() {
         }}
       >
         <div className="max-w-xl lg:mb-0">
-          <h1 className="text-4xl text-center font-semibold text-gray-900 dark:text-white">
+          <h1 className="text-4xl lg:text-5xl text-center font-semibold text-gray-900 dark:text-white">
             About
           </h1>
           <p className="mt-9 text-gray-600 dark:text-gray-400">

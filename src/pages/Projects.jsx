@@ -21,10 +21,12 @@ function Projects() {
           data-react-helmet="true"
         />
       </Helmet>
-      <div className="bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl">
-        <h1 className="text-2xl font-medium text-center border-b border-gray-200 dark:border-slate-700 py-6 bg-slate-50 dark:bg-transparent rounded-t-md">
-          Notable Projects
+      <div className="flex flex-col items-center justify-center mt-7">
+        <h1 className="text-4xl lg:text-6xl font-semibold text-gray-900 dark:text-white">
+          Projects
         </h1>
+      </div>
+      <div className="mt-12 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl">
         <p className="text-center text-gray-500 dark:text-gray-400 py-8">This page is under construction...</p>
       </div>
     </div>
