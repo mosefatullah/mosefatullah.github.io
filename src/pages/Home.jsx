@@ -67,7 +67,7 @@ export default function Home({ theme }) {
 
                 {/* ____ HERO SECTION */}
                 <div
-                    className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-9 p-4 py-7 justify-items-center items-center relative md:px-8"
+                    className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-9 p-4 py-7 justify-items-center items-center relative md:px-8 overflow-x-hidden"
                     style={{
                         minHeight: "calc(100vh - 150px)",
                     }}
@@ -153,7 +153,7 @@ export default function Home({ theme }) {
                 </div>
 
                 {/* ____ INTRO SECTION */}
-                <WithMotion object={slideAnimation("up")} className="__intro-section w-full mx-auto p-4 md:px-8 py-14 max-w-7xl" id="intro">
+                <WithMotion object={slideAnimation("up")} className="__intro-section w-full mx-auto p-4 md:px-8 py-14 max-w-7xl overflow-x-hidden" id="intro">
                     <div className="flex flex-col md:flex-row gap-4 lg:gap-8">
                         <WithMotion object={slideAnimation("left")} className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4">
                         </WithMotion>
