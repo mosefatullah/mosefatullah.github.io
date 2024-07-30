@@ -7,6 +7,7 @@ export default {
   extend: {
    fontFamily: {
     sans: ["Inter", ...defaultTheme.fontFamily.sans],
+    special: ["Cardo", ...defaultTheme.fontFamily.sans],
    },
    colors: {
     primary: {
@@ -22,7 +23,7 @@ export default {
      900: "#1e3a8a",
      950: "#172554",
     },
-   }
+   },
   },
  },
  plugins: [],

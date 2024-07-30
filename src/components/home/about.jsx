@@ -44,7 +44,7 @@ function About() {
                                 <div className="py-5 px-7 md:flex md:gap-6">
                                     <img src={e.logo} alt="Experience" className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-md md:ring-9 md:ring-white md:dark:ring-gray-900 dark:bg-blue-900 mb-4 md:mb-0" />
                                     <div>
-                                        <h3 className="flex items-center mb-1 text-xl whitespace-nowrap font-semibold text-gray-900 dark:text-white">{e.company} <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">{e.position}</span></h3>
+                                        <h3 className="flex items-center mb-1 text-xl whitespace-nowrap font-semibold text-gray-900 dark:text-white">{e.company} <span className="bg-purple-100 text-purple-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300 ms-3">{e.position}</span></h3>
                                         <p className="my-2 font-normal text-gray-500 dark:text-white text-sm">{e.description}</p>
                                         <time className="block my-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">{e.duration}</time>
                                         <p className="my-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-400">

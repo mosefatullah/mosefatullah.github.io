@@ -46,8 +46,24 @@ export default function Home({ theme }) {
                     {JSON.stringify(schema)}
                 </script>
             </Helmet>
+
+            <motion.div
+                transition={{ repeat: Infinity, duration: 2, repeatType: "reverse" }}
+                animate={{ rotate: 360, opacity: 0 }}
+                className="_sketch absolute top-100 left-10 opacity-75 hidden lg:block">
+                <svg fill="none" height="44" viewBox="0 0 68 68" width="44" xmlns="http://www.w3.org/2000/svg"><path d="m29.201 4.40976c1.4024-4.795399 8.1956-4.795399 9.598 0l4.8413 16.55444c.4787 1.6368 1.7587 2.9168 3.3955 3.3955l16.5544 4.8413c4.7954 1.4024 4.7954 8.1956 0 9.598l-16.5544 4.8413c-1.6368.4787-2.9168 1.7587-3.3955 3.3955l-4.8413 16.5544c-1.4024 4.7954-8.1956 4.7954-9.598 0l-4.8413-16.5544c-.4787-1.6368-1.7587-2.9168-3.3955-3.3955l-16.55444-4.8413c-4.795399-1.4024-4.795399-8.1956 0-9.598l16.55444-4.8413c1.6368-.4787 2.9168-1.7587 3.3955-3.3955z" fill="#fff" /></svg>
+            </motion.div>
+
+            <motion.div
+                transition={{ repeat: Infinity, delay: 2, duration: 2, repeatType: "reverse" }}
+                animate={{ rotate: 360, opacity: 0 }} className="_sketch absolute top-[80vh] right-10 opacity-50"
+            >
+                <svg fill="none" height="44" viewBox="0 0 68 68" width="44" xmlns="http://www.w3.org/2000/svg"><path d="m29.201 4.40976c1.4024-4.795399 8.1956-4.795399 9.598 0l4.8413 16.55444c.4787 1.6368 1.7587 2.9168 3.3955 3.3955l16.5544 4.8413c4.7954 1.4024 4.7954 8.1956 0 9.598l-16.5544 4.8413c-1.6368.4787-2.9168 1.7587-3.3955 3.3955l-4.8413 16.5544c-1.4024 4.7954-8.1956 4.7954-9.598 0l-4.8413-16.5544c-.4787-1.6368-1.7587-2.9168-3.3955-3.3955l-16.55444-4.8413c-4.795399-1.4024-4.795399-8.1956 0-9.598l16.55444-4.8413c1.6368-.4787 2.9168-1.7587 3.3955-3.3955z" fill="#fff" /></svg>
+            </motion.div>
+
             <div className="__home" ref={homeRef}>
                 <div className="_sketch h-[150px] w-[200px] absolute dark:left-[18%] top-8 rotate-12 rounded-3xl bg-gradient-to-l dark:from-transparent dark:to-blue-500 blur-3xl filter dark:block dark:opacity-20 lg:top-44 lg:-left-20 lg:h-72 lg:w-[350px] xl:h-80 xl:w-[700px]"></div>
+
 
                 {/* ____ HERO SECTION */}
                 <div
@@ -59,7 +75,7 @@ export default function Home({ theme }) {
                     <WithMotion object={headContainerAnimation}>
                         <div className="mb-[3rem] lg:mb-0 pt-6 lg:pt-0">
                             <motion.div {...headTextAnimation}>
-                                <h1 className="text-4xl md:text-5xl font-bold lg:leading-[3.5rem]">{Data.hero.headerP1}&nbsp;<span id="h">{Data.hero.headerP2[0]}</span></h1>
+                                <h1 className="text-4xl md:text-5xl font-bold lg:leading-[3.5rem] font-special">{Data.hero.headerP1}<br /><span id="h">{Data.hero.headerP2[0]}</span></h1>
                             </motion.div>
                             <motion.div {...headContentAnimation}>
                                 <p className="mt-8 text-gray-600 dark:text-gray-400">
@@ -117,7 +133,7 @@ export default function Home({ theme }) {
 
                             <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">5</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">body</span><span className="text-gray-400">&gt;</span></p>
 
-                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">6</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">p <span className="text-blue-200">class=</span><span className="text-orange-400">&quot;paragraph&quot;</span></span><span className="text-gray-400">&gt;</span>Welcome!<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">p</span><span className="text-gray-400">&gt;</span></p>
+                            <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">6</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-blue-400">p <span className="text-blue-200">class=</span><span className="text-orange-400">&quot;paragraph&quot;</span></span><span className="text-gray-400">&gt;</span>Salam!<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">p</span><span className="text-gray-400">&gt;</span></p>
 
                             <p><span className="text-gray-400 inline-block w-[20px] border-r border-gray-400 mr-5">7</span>&nbsp;&nbsp;<span className="text-gray-400">&lt;</span><span className="text-gray-400">/</span><span className="text-blue-400">body</span><span className="text-gray-400">&gt;</span></p>
 
@@ -140,30 +156,31 @@ export default function Home({ theme }) {
                     {/* ____ SKILLS SECTION */}
                     <WithMotion object={slideAnimation("up")} className="__skills-section w-full mx-auto p-4 md:px-8 py-14 max-w-7xl" id="skills-overview">
                         <div className="flex flex-col items-center justify-center mt-7">
-                            <img src={skills} className="w-16 h-16" />
-                            <h1 className="text-4xl font-semibold text-gray-900 dark:text-white">
+                            <h1 className="text-4xl lg:text-7xl font-semibold text-gray-900 dark:text-white">
                                 {Data.skills.heading}
                             </h1>
                             <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl text-center">
                                 {Data.skills.paragraph}
                             </p>
                         </div>
-                        <div className="my-14 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl">
-                            <div className="flex flex-col items-center justify-center">
-                                <div className="flex flex-wrap justify-center items-center py-7 space-x-3">
-                                    {
-                                        Data.skills.lists.map((item, index) => (
-                                            <div className="flex flex-col items-center justify-center p-4" key={index}>
-                                                <img
-                                                    src={item.icon}
-                                                    className="w-16 h-16"
-                                                />
-                                                <p className="mt-2 text-gray-600 dark:text-gray-400">{item.name}</p>
-                                            </div>))
-                                    }
+                        <WithMotion object={slideAnimation("up")}>
+                            <div className="my-14 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl">
+                                <div className="flex flex-col items-center justify-center">
+                                    <div className="flex flex-wrap justify-center items-center py-7 space-x-3">
+                                        {
+                                            Data.skills.lists.map((item, index) => (
+                                                <div className="flex flex-col items-center justify-center p-4" key={index}>
+                                                    <img
+                                                        src={item.icon}
+                                                        className="w-16 h-16"
+                                                    />
+                                                    <p className="mt-2 text-gray-600 dark:text-gray-400">{item.name}</p>
+                                                </div>))
+                                        }
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </WithMotion>
                     </WithMotion>
                     {/* ____ ABOUT SECTION */}
                     <div className="__about-section w-full mx-auto p-4 md:px-8"
