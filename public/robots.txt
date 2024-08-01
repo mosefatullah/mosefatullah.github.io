@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://sefatullah.pages.dev/sitemap.xml
+Sitemap: https://sefatullah.pages.dev/page-sitemap.xml
