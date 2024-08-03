@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://sefatullah.pages.dev/page-sitemap.xml
+Allow: /sitemap.xml
+Sitemap: https://sefatullah.pages.dev/sitemap.xml
