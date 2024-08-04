@@ -1,20 +1,20 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { motion, transform } from "framer-motion";
+import { motion } from "framer-motion";
 import Typewriter from 'typewriter-effect/dist/core';
 import Tilt from 'react-parallax-tilt';
 
 import About from "../components/home/about";
+import WithMotion from "../components/WithMotion.jsx";
 
 import lightpattern from "../assets/images/pattern_light.svg";
 import darkpattern from "../assets/images/pattern_dark.svg";
 
 /* Utils */
+import { headContainerAnimation, headContentAnimation, headTextAnimation, slideAnimation } from "../utils/motion.js";
 import Data from "../data/home.js";
-import { fadeAnimation, headContainerAnimation, headContentAnimation, headTextAnimation, slideAnimation } from "../utils/motion.js";
-import { schema } from './../data/schema';
-import WithMotion from "../components/WithMotion.jsx";
+import { aboutSchema, Description } from './../data/meta.js';
 
 export default function Home({ theme }) {
     const homeRef = React.useRef(null);
@@ -34,16 +34,16 @@ export default function Home({ theme }) {
                 <title>Mohammad Sefatullah - Official Website</title>
                 <meta
                     name="description"
-                    content="Mohammad Sefatullah is a Bangladeshi web designer, developer and programmer. He dreams of becoming a software engineer and passionate programming leader."
+                    content={Description}
                     data-react-helmet="true"
                 />
                 <meta
                     name="keywords"
-                    content="Mohammad Sefatullah, Sefatullah, web developer, coder, bangladesh, web designer, frontend developer"
+                    content="Mohammad Sefatullah, Sefatullah, Full Stack Web Developer, Coder, Programmer, MERN Stack Developer, Web Designer, Web Developer, Mohammad Sefatullah Official Website"
                     data-react-helmet="true"
                 />
                 <script type="application/ld+json" data-react-helmet="true">
-                    {JSON.stringify(schema)}
+                    {JSON.stringify(aboutSchema)}
                 </script>
             </Helmet>
 

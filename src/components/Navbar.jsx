@@ -168,7 +168,7 @@ export default function Navbar({ theme, setTheme }) {
                   )}
                 </button>
                 <Link
-                  to="/"
+                  to="/portfolio"
                   className="bg-green-600 dark:bg-blue-700 text-white rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 dark:hover:bg-blue-800"
                 >
                   Portfolio
@@ -248,10 +248,10 @@ export default function Navbar({ theme, setTheme }) {
             </div>
             <div className="border-l border-gray-300 dark:border-gray-700 h-7"></div>
             <Link
-              to="/contact"
+              to="/portfolio"
               className="bg-green-600 dark:bg-blue-700 text-white rounded-md px-3 py-1 text-sm font-medium hover:bg-green-700 dark:hover:bg-blue-800"
             >
-              Contact
+              Portfolio
             </Link>
           </div>
         </div>

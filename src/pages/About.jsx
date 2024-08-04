@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet";
 // Assets
 import me from "../assets/images/sefatullah.jpg";
 
+import { Description } from "../data/meta";
+
 function About() {
   return (
     <div className="__about min-h-[70vh]">
@@ -10,12 +12,12 @@ function About() {
         <title>About | Mohammad Sefatullah</title>
         <meta
           name="description"
-          content="About Mohammad Sefatullah, a web designer, developer, and programmer."
+          content={Description}
           data-react-helmet="true"
         />
         <meta
           name="keywords"
-          content="About Mohammad Sefatullah, About Sefatullah, web developer, coder, bangladesh, web designer, frontend developer"
+          content="Mohammad Sefatullah, Sefatullah, Full Stack Web Developer, Coder, Programmer, MERN Stack Developer, Web Designer, Web Developer, Mohammad Sefatullah Official Website"
           data-react-helmet="true"
         />
         <link rel="canonical" href="https://sefatullah.com/?/about" data-react-helmet="true" />
