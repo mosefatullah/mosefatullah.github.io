@@ -1,7 +1,7 @@
 export const aboutSchema = {
  "@context": "https://schema.org",
  "@type": "Person",
- image: "https://sefatullah.com/android-chrome-512x512.png",
+ image: "https://sefatullah.pages.dev/android-chrome-512x512.png",
  url: "https://sefatullah.pages.dev",
  name: "Mohammad Sefatullah",
  jobTitle: "Full Stack Web Developer",

@@ -15,7 +15,7 @@ function Contact() {
                     content="Contact Mohammad Sefatullah, Contact Sefatullah, web developer, coder, bangladesh, web designer, frontend developer"
                     data-react-helmet="true"
                 />
-                <link rel="canonical" href="https://sefatullah.com/?/contact" data-react-helmet="true" />
+                <link rel="canonical" href="https://sefatullah.com/contact" data-react-helmet="true" />
                 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
             </Helmet>
             {/* ____ HERO SECTION */}
