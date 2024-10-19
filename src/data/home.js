@@ -98,57 +98,72 @@ export default {
      location: "Dhaka, Bangladesh",
     },
    ],
-   skills: [
-    {
-     skill: "HTML",
-     logo: "https://img.icons8.com/color/96/000000/html-5.png",
-     description: "I have been coding in HTML for 3 years.",
-    },
-    {
-     skill: "CSS",
-     logo: "https://img.icons8.com/color/96/000000/css3.png",
-     description: "I have been coding in CSS for 3 years.",
-    },
-    {
-     skill: "JavaScript",
-     logo: "https://img.icons8.com/color/96/000000/javascript.png",
-     description: "I have been coding in JavaScript for 2 years.",
-    },
-    {
-     skill: "Bootstrap",
-     logo: "https://img.icons8.com/color/96/000000/bootstrap.png",
-     description: "I have been coding in Bootstrap for 2 years.",
-    },
-    {
-     skill: "Tailwind",
-     logo: "https://img.icons8.com/color/96/000000/tailwindcss.png",
-     description: "I have been coding in Tailwind for 1 year.",
-    },
-    {
-     skill: "Firebase",
-     logo: "https://img.icons8.com/color/96/000000/firebase.png",
-     description: "I have been coding in Firebase for 1 year.",
-    },
-    {
-     skill: "React",
-     logo: "https://img.icons8.com/color/96/000000/react-native.png",
-     description: "I have been coding in React for 1 year.",
-    },
-    {
-     skill: "Node.js",
-     logo: "https://img.icons8.com/color/96/000000/nodejs.png",
-     description: "I have been coding in Node.js for 1 year.",
-    },
-    {
-     skill: "MongoDB",
-     logo: "https://img.icons8.com/color/96/000000/mongodb.png",
-     description: "I have been coding in MongoDB for 1 year.",
-    },
-   ],
+   skills: {
+    Languages: [
+     {
+      skill: "HTML",
+      logo: "https://img.icons8.com/color/96/000000/html-5.png",
+      category: "Languages",
+     },
+     {
+      skill: "CSS",
+      logo: "https://img.icons8.com/color/96/000000/css3.png",
+      category: "Languages",
+     },
+     {
+      skill: "JavaScript",
+      logo: "https://img.icons8.com/color/96/000000/javascript.png",
+      category: "Languages",
+     },
+    ],
+    Frameworks: [
+     {
+      skill: "Bootstrap",
+      logo: "https://img.icons8.com/color/96/000000/bootstrap.png",
+      category: "Frameworks",
+     },
+     {
+      skill: "Tailwind",
+      logo: "https://img.icons8.com/color/96/000000/tailwindcss.png",
+      category: "Frameworks",
+     },
+    ],
+    Libraries: [
+     {
+      skill: "React",
+      logo: "https://img.icons8.com/color/96/000000/react-native.png",
+      category: "Libraries",
+     },
+     {
+      skill: "Node.js",
+      logo: "https://img.icons8.com/color/96/000000/nodejs.png",
+      category: "Libraries",
+     },
+    ],
+    Databases: [
+     {
+      skill: "MongoDB",
+      logo: "https://img.icons8.com/color/96/000000/mongodb.png",
+      category: "Databases",
+     },
+    ],
+    APIs: [
+     {
+      skill: "REST APIs",
+      logo: "https://img.icons8.com/color/96/000000/api-settings.png",
+     },
+    ],
+    Platforms: [
+     {
+      skill: "Firebase",
+      logo: "https://img.icons8.com/color/96/000000/firebase.png",
+      category: "Platforms",
+     },
+    ],
+   },
    education: [
     {
-     logo:
-      "https://media.licdn.com/dms/image/C510BAQH_L9aXAGuEPg/company-logo_100_100/0/1630569557230?e=1730332800&v=beta&t=Xf4Noa9KCJacjUfwknTyM9ZO5sgCg82XRr1CV0WY4L4",
+     logo: "/images/1630569557230.jpeg",
      institution: "Ta'mirul Millat Kamil Madrasah",
      degree: "HSC (Science)",
      duration: "2023 - 2025",
@@ -156,8 +171,7 @@ export default {
      grade: "GPA: (waiting)",
     },
     {
-     logo:
-      "https://media.licdn.com/dms/image/C560BAQG98UaewnNUsA/company-logo_100_100/0/1630656695072?e=1730332800&v=beta&t=vHcfQdvcM6RNgvBNjoN76iebvmo0yJoLcFg33VAzOic",
+     logo: "/images/1630656695072.jpeg",
      institution: "Darunnazat Siddiqia Kamil Madrasah",
      degree: "SSC (Science)",
      duration: "2021 - 2023",
@@ -169,19 +183,16 @@ export default {
     {
      title: "SkillsBoost Soft Skills Development Program",
      provider: "Youth Skill Development Institute Trust",
-     logo:
-      "https://media.licdn.com/dms/image/D4D0BAQEE6MTIJ9LvcA/company-logo_100_100/0/1700458372087/ycibd22_logo?e=1730332800&v=beta&t=v_0pLgT52SWHm1gVRC2R93duxMZd71VLTh-0v7tXCWs",
+     logo: "/images/ycibd22_logo.jpeg",
      duration: "Jul 2024",
      skills:
       "Communication, Leadership, Problem Solving, Public Speaking, Team Work, Critical Thinking, Emotional intelligence",
-     certificate_img:
-      "https://media.licdn.com/dms/image/D562DAQE_uz-SfGDdHg/profile-treasury-document-cover-images_480/0/1722230481195?e=1722942000&v=beta&t=M8Q1NV3GHHPGMfsCueuRi1JFFwd79f3rZNUERSZ_dsM",
+     certificate_img: "/images/skillsboost-certificate.jpg",
     },
     {
      title: "Frontend Developer (React)",
      provider: "HackerRank",
-     logo:
-      "https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_100_100/0/1705561459405/hackerrank_logo?e=1730332800&v=beta&t=qxXB3JPOp27h8U2XoQ3PUxKSrM_7O90t2vfzfxIgyEo",
+     logo: "/images/hackerrank_logo.jpeg",
      duration: "Apr 2024",
      skills: "React.js, Front-End Development",
      certificate_link: "https://www.hackerrank.com/certificates/f076d72d71d0",
@@ -189,8 +200,7 @@ export default {
     {
      title: "JavaScript (Intermediate)",
      provider: "HackerRank",
-     logo:
-      "https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_100_100/0/1705561459405/hackerrank_logo?e=1730332800&v=beta&t=qxXB3JPOp27h8U2XoQ3PUxKSrM_7O90t2vfzfxIgyEo",
+     logo: "/images/hackerrank_logo.jpeg",
      duration: "Apr 2024",
      skills: "JavaScript, Programming",
      certificate_link: "https://www.hackerrank.com/certificates/9d9bc3e2530e",

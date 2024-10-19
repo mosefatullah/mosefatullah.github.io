@@ -56,18 +56,22 @@ function About() {
                         ))
                     }
                 </div>
-                <div id="section2" className="_section px-4 hidden">
+                <div id="section2" className="_section px-10 hidden">
                     {
-                        Data.overview.about.skills.map((s, i) => (
-                            <WithMotion key={i} object={{ animate: { opacity: 1, y: 0 }, initial: { opacity: 0, y: 50 }, transition: { duration: 0.5 } }} className="relative border-b border-gray-200 dark:border-slate-700">
-                                <div className="py-5 px-3 md:px-7 md:flex md:gap-6">
-                                    <img src={s.logo} alt="Skill" className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-md md:ring-9 md:ring-white md:dark:ring-gray-900 dark:bg-blue-900 mb-4 md:mb-0" />
-                                    <div>
-                                        <h3 className="mb-1 flex items-center text-xl font-semibold text-gray-900 dark:text-white">{s.skill}</h3>
-                                        <p className="my-2 font-normal text-gray-500 dark:text-white text-sm">{s.description}</p>
-                                    </div>
+                        Data.overview.about.skills && Object.keys(Data.overview.about.skills).map((k, i) => (
+                            <div key={i}>
+                                <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">{k}</h2>
+                                <div className="flex flex-wrap gap-4 mb-12">
+                                    {
+                                        Data.overview.about.skills[k].map((s, i) => (
+                                            <WithMotion key={i} object={{ animate: { opacity: 1, y: 0 }, initial: { opacity: 0, y: 50 }, transition: { duration: 0.5 } }} className="flex items-center justify-center h-9 bg-blue-100 rounded-md md:ring-9 md:ring-white md:dark:ring-gray-900 dark:bg-white py-0.5 ps-1 pe-1.5 cursor-default hover:bg-gray-600 text-gray-500 dark:text-gray-600 hover:text-white transition-all">
+                                                <img src={s.logo} alt={s.skill} className="h-full" />
+                                                <h3 className="text-sm font-normal ms-2">{s.skill}</h3>
+                                            </WithMotion>
+                                        ))
+                                    }
                                 </div>
-                            </WithMotion>
+                            </div>
                         ))
                     }
                 </div>
