@@ -14,7 +14,6 @@ import darkpattern from "../assets/images/pattern_dark.svg";
 /* Utils */
 import { headContainerAnimation, headContentAnimation, headTextAnimation, slideAnimation } from "../utils/motion.js";
 import Data from "../data/home.js";
-import { aboutSchema, Description } from './../data/meta.js';
 
 export default function Home({ theme }) {
     const homeRef = React.useRef(null);
@@ -34,7 +33,7 @@ export default function Home({ theme }) {
                 <title>Mohammad Sefatullah - Official Website</title>
                 <meta
                     name="description"
-                    content={Description}
+                    content="Mohammad Sefatullah is a professional full stack web developer from Bangladesh born in 2006. He dreams of becoming a software engineer and passionate coding leader. He is trying to get involved in various extra curricular activities with the vision of making a positive impact on the society."
                     data-react-helmet="true"
                 />
                 <meta
@@ -42,9 +41,6 @@ export default function Home({ theme }) {
                     content="Mohammad Sefatullah, Sefatullah, Full Stack Web Developer, Coder, Programmer, MERN Stack Developer, Web Designer, Web Developer, Mohammad Sefatullah Official Website"
                     data-react-helmet="true"
                 />
-                <script type="application/ld+json" data-react-helmet="true">
-                    {JSON.stringify(aboutSchema)}
-                </script>
             </Helmet>
 
             <motion.div

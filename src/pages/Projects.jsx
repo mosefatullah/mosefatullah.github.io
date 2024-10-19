@@ -17,7 +17,7 @@ function Projects() {
         />
         <link
           rel="canonical"
-          href="https://sefatullah.pages.dev/projects"
+          href="https://mosefatullah.github.io/projects"
           data-react-helmet="true"
         />
       </Helmet>

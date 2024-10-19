@@ -168,7 +168,7 @@ function Blog() {
         />
         <link
           rel="canonical"
-          href="https://sefatullah.pages.dev/blog"
+          href="https://mosefatullah.github.io/blog"
           data-react-helmet="true"
         />
       </Helmet>
