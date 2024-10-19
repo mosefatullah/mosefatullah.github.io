@@ -13,6 +13,7 @@ import Projects from "./pages/Projects";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
     const [theme, setTheme] = React.useState(
@@ -93,7 +94,7 @@ function App() {
                             path="/portfolio"
                             element={
                                 <Layout>
- 
+                                    <Portfolio theme={theme} />
                                 </Layout>
                             }
                         />
