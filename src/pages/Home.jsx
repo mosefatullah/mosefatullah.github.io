@@ -71,10 +71,10 @@ export default function Home({ theme }) {
                     <WithMotion object={headContainerAnimation}>
                         <div className="mb-[3rem] lg:mb-0 pt-6 lg:pt-0">
                             <motion.div {...headTextAnimation}>
-                                <h1 className="text-4xl md:text-5xl font-bold lg:leading-[3.5rem]">{Data.hero.headerP1}<br /><span className="" id="h">{Data.hero.headerP2[0]}</span></h1>
+                                <h1 className="text-3xl md:text-5xl font-bold lg:leading-[3.5rem]">{Data.hero.headerP1}<br /><span className="" id="h">{Data.hero.headerP2[0]}</span></h1>
                             </motion.div>
                             <motion.div {...headContentAnimation}>
-                                <p className="mt-8 text-gray-600 dark:text-gray-400">
+                                <p className="text-sm md:text-base mt-8 text-gray-600 dark:text-gray-400">
                                     {Data.hero.paragraph}
                                 </p>
                             </motion.div>
@@ -161,7 +161,7 @@ export default function Home({ theme }) {
                     </WithMotion>
                 </div>
 
-                {/* ____ INTRO SECTION */}
+                {/* ____ INTRO SECTION 
                 <WithMotion object={slideAnimation("up")} className="__intro-section w-full mx-auto p-4 md:px-8 py-14 max-w-7xl overflow-x-hidden" id="intro">
                     <div className="flex flex-col md:flex-row gap-4 lg:gap-8">
                         <WithMotion object={slideAnimation("left")} className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4">
@@ -175,7 +175,7 @@ export default function Home({ theme }) {
                         <WithMotion object={slideAnimation("right")} className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4">
                         </WithMotion>
                     </div>
-                </WithMotion>
+                </WithMotion>*/}
 
                 <div className="w-full border-t border-gray-200 dark:border-0 bg-pattern dark:bg-dpattern lg:py-5 dark:from-gray-900 bg-gradient-to-r from-white">
 
@@ -224,7 +224,7 @@ export default function Home({ theme }) {
                         </div>
                     </div> */}
                 </div>
-            </div >
+            </div>
         </>
     );
 }

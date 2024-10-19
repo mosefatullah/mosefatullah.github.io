@@ -179,7 +179,7 @@ export default function Navbar({ theme, setTheme }) {
         </div>
 
         <div className="lg:hidden" id="mobile-menu" hidden={openNav == false}>
-          <div className="dark:text-white space-y-1 px-2 pt-8 nav-menu-items ">
+          <div className="dark:text-white space-y-1 px-2 pt-8 nav-menu-items overflow-x-auto overflow-y-hidden pb-3">
             {navMenu.map((item, index) => (
               <NavLink
                 to={item[1]}
@@ -201,12 +201,12 @@ export default function Navbar({ theme, setTheme }) {
           </div>
           <hr className="border-gray-300 dark:border-gray-700 my-4" />
           <div className="dark:text-white space-y-1 px-2 flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <button
-                className="hover:bg-gray-300 rounded-full p-2 text-sm font-medium dark:hover:bg-gray-600"
+            <div className="flex items-center md:space-x-3"
                 onClick={() => {
                   setTheme(theme === "dark" ? "light" : "dark");
-                }}
+                }}>
+              <button
+                className="hover:bg-gray-300 rounded-full p-2 text-sm font-medium dark:hover:bg-gray-600"
               >
                 {theme === "dark" ? (
                   <>
@@ -242,7 +242,7 @@ export default function Navbar({ theme, setTheme }) {
                   </svg>
                 )}
               </button>
-              <p className="text-sm font-medium">
+              <p className="text-sm font-medium cursor-pointer hover:bg-gray-300 rounded-md px-3 py-1 dark:hover:bg-gray-600">
                 {theme === "dark" ? "Light Mode" : "Dark Mode"}
               </p>
             </div>
