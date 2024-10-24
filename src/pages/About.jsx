@@ -18,7 +18,6 @@ function About() {
           content="Mohammad Sefatullah, Sefatullah, Full Stack Web Developer, Coder, Programmer, MERN Stack Developer, Web Designer, Web Developer, Mohammad Sefatullah Official Website"
           data-react-helmet="true"
         />
-        <link rel="canonical" href="https://mosefatullah.github.io/about" data-react-helmet="true" />
       </Helmet>
       {/* ____ HERO SECTION */}
       <div
