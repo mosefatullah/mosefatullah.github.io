@@ -1,32 +1,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://mosefatullah.github.io/</loc>
-      <lastmod>2024-10-24</lastmod>
-      <priority>1.00</priority>
+      <loc>https://sefatullah.com/</loc>
+      <lastmod>2025-03-30</lastmod>
    </url>
    <url>
-      <loc>https://mosefatullah.github.io/?/about</loc>
-      <lastmod>2024-10-24</lastmod>
-      <priority>0.95</priority>
+      <loc>https://sefatullah.com/?/about</loc>
+      <lastmod>2025-03-30</lastmod>
    </url>
    <url>
-      <loc>https://mosefatullah.github.io/?/blog</loc>
-      <lastmod>2024-10-24</lastmod>
-      <priority>0.95</priority>
+      <loc>https://sefatullah.com/?/blog</loc>
+      <lastmod>2025-03-30</lastmod>
    </url>
    <url>
-      <loc>https://mosefatullah.github.io/?/projects</loc>
-      <lastmod>2024-10-24</lastmod>
-      <priority>0.95</priority>
+      <loc>https://sefatullah.com/?/projects</loc>
+      <lastmod>2025-03-30</lastmod>
    </url>
    <url>
-      <loc>https://mosefatullah.github.io/?/contact</loc>
-      <lastmod>2024-10-24</lastmod>
-      <priority>0.95</priority>
+      <loc>https://sefatullah.com/?/contact</loc>
+      <lastmod>2025-03-30</lastmod>
    </url>
    <url>
-      <loc>https://mosefatullah.github.io/?/portfolio</loc>
-      <lastmod>2024-10-24</lastmod>
-      <priority>0.95</priority>
+      <loc>https://sefatullah.com/?/portfolio</loc>
+      <lastmod>2025-03-30</lastmod>
    </url>
 </urlset>
