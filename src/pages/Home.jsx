@@ -33,7 +33,7 @@ export default function Home({ theme }) {
                 <title>Mohammad Sefatullah - Official Website</title>
                 <meta
                     name="description"
-                    content="Mohammad Sefatullah is a professional full stack web developer from Bangladesh born in 2006. He dreams of becoming a software engineer and passionate coding leader. He is trying to get involved in various extra curricular activities with the vision of making a positive impact on the society."
+                    content="Mohammad Sefatullah is a passionate full stack web developer from Bangladesh born in 2006. He dreams of becoming a software engineer. He is trying to get involved in various extra curricular activities with the vision of making a positive impact on the society."
                     data-react-helmet="true"
                 />
                 <meta
@@ -41,6 +41,8 @@ export default function Home({ theme }) {
                     content="Mohammad Sefatullah, Sefatullah, Full Stack Web Developer, Coder, Programmer, MERN Stack Developer, Web Designer, Web Developer, Mohammad Sefatullah Official Website"
                     data-react-helmet="true"
                 />
+
+                <link rel="canonical" href="https://sefatullah.com" />
             </Helmet>
 
             <motion.div

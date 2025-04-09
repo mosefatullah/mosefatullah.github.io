@@ -153,51 +153,53 @@ function Blog() {
     fetchPosts("", "middle");
   }, []);
   return (
-    <>
-      <Helmet>
-        <title>Blog | Mohammad Sefatullah</title>
-        <meta
-          name="description"
-          content="Mohammad Sefatullah's blog posts."
-          data-react-helmet="true"
-        />
-        <meta
-          name="keywords"
-          content="Mohammad Sefatullah, blog, web developer"
-          data-react-helmet="true"
-        />
-      </Helmet>
-      <div className="flex flex-col items-center justify-center mt-7">
-        <h1 className="text-4xl lg:text-6xl font-semibold text-gray-900 dark:text-white">
-          Blog
-        </h1>
-      </div>
-      <div
-        className="flex flex-col justify-center items-start max-w-2xl mx-auto my-5 lg:my-16 space-y-5 lg:space-y-10 min-h-[70vh]"
-        id="posts"
-      >
-        <div className="w-full text-center text-xl text-gray-900 dark:text-gray-100">
-          No posts found
-        </div>
-      </div>
-      <div className="postNumberNav flex justify-center items-center space-x-3 mt-7 mb-12 overflow-scroll">
-        <button
-          className="hover:underline hover:text-blue-500 text-md text-blue-500 dark:text-blue-500"
-          onClick={(e) => {
-            document.querySelectorAll(".postNumberNav button").forEach((l) => {
-              l.classList.remove("text-blue-500", "dark:text-blue-500");
-              l.classList.add("text-gray-600", "dark:text-gray-400");
-            });
-            e.target.classList.add("text-blue-500", "dark:text-blue-500");
-            e.target.classList.remove("text-gray-600", "dark:text-gray-400");
-            fetchPosts("", false);
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-        >
-          1
-        </button>
-      </div>
-    </>
+   <>
+    <Helmet>
+     <title>Blog | Mohammad Sefatullah</title>
+     <meta
+      name="description"
+      content="Mohammad Sefatullah's blog posts."
+      data-react-helmet="true"
+     />
+     <meta
+      name="keywords"
+      content="Mohammad Sefatullah, blog, web developer"
+      data-react-helmet="true"
+     />
+
+     <link rel="canonical" href="https://sefatullah.com/blog" />
+    </Helmet>
+    <div className="flex flex-col items-center justify-center mt-7">
+     <h1 className="text-4xl lg:text-6xl font-semibold text-gray-900 dark:text-white">
+      Blog
+     </h1>
+    </div>
+    <div
+     className="flex flex-col justify-center items-start max-w-2xl mx-auto my-5 lg:my-16 space-y-5 lg:space-y-10 min-h-[70vh]"
+     id="posts"
+    >
+     <div className="w-full text-center text-xl text-gray-900 dark:text-gray-100">
+      No posts found
+     </div>
+    </div>
+    <div className="postNumberNav flex justify-center items-center space-x-3 mt-7 mb-12 overflow-scroll">
+     <button
+      className="hover:underline hover:text-blue-500 text-md text-blue-500 dark:text-blue-500"
+      onClick={(e) => {
+       document.querySelectorAll(".postNumberNav button").forEach((l) => {
+        l.classList.remove("text-blue-500", "dark:text-blue-500");
+        l.classList.add("text-gray-600", "dark:text-gray-400");
+       });
+       e.target.classList.add("text-blue-500", "dark:text-blue-500");
+       e.target.classList.remove("text-gray-600", "dark:text-gray-400");
+       fetchPosts("", false);
+       window.scrollTo({ top: 0, behavior: "smooth" });
+      }}
+     >
+      1
+     </button>
+    </div>
+   </>
   );
 }
 
