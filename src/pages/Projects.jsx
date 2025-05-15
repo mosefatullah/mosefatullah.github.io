@@ -15,8 +15,6 @@ function Projects() {
           content="Mohammad Sefatullah, projects, web developer"
           data-react-helmet="true"
         />
-
-        <link rel="canonical" href="https://sefatullah.com/projects" />
       </Helmet>
       <div className="flex flex-col items-center justify-center mt-7">
         <h1 className="text-4xl lg:text-6xl font-semibold text-gray-900 dark:text-white">

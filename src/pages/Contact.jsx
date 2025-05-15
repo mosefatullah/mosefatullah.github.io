@@ -20,8 +20,6 @@ function Contact() {
         src="https://assets.calendly.com/assets/external/widget.js"
         async
        ></script>
-
-       <link rel="canonical" href="https://sefatullah.com/contact" />
       </Helmet>
       {/* ____ HERO SECTION */}
       <div
