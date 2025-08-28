@@ -237,7 +237,7 @@ export default function Home({ theme }) {
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <span className="text-gray-400">&lt;</span>
          <span className="text-blue-400">title</span>
-         <span className="text-gray-400">&gt;</span>Subhanallah
+         <span className="text-gray-400">&gt;</span>খবর - News
          <span className="text-gray-400">&lt;</span>
          <span className="text-gray-400">/</span>
          <span className="text-blue-400">title</span>
