@@ -117,7 +117,19 @@ export default function Home({ theme }) {
       <div className="mb-[3rem] lg:mb-0 pt-6 lg:pt-0">
        <motion.div {...headTextAnimation}>
         <h1 className="text-3xl md:text-5xl font-bold lg:leading-[3.5rem]">
-         {Data.hero.headerP1}
+         {Data.hero.headerP1}&nbsp;
+         <motion.span
+          transition={{
+           repeat: Infinity,
+           delay: 2,
+           duration: 1,
+           repeatType: "reverse",
+          }}
+          animate={{ opacity: 0.2 }}
+            className="text-green-500 inline-block"
+         >
+          &lt;/&gt;
+         </motion.span>
          <br />
          <span className="" id="h">
           {Data.hero.headerP2[0]}
@@ -125,7 +137,7 @@ export default function Home({ theme }) {
         </h1>
        </motion.div>
        <motion.div {...headContentAnimation}>
-        <p className="text-sm md:text-base mt-8 text-gray-600 dark:text-gray-400">
+        <p className="text-lg mt-8 text-gray-600 dark:text-gray-400">
          {Data.hero.paragraph}
         </p>
        </motion.div>
@@ -225,7 +237,7 @@ export default function Home({ theme }) {
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <span className="text-gray-400">&lt;</span>
          <span className="text-blue-400">title</span>
-         <span className="text-gray-400">&gt;</span>Untitled
+         <span className="text-gray-400">&gt;</span>Subhanallah
          <span className="text-gray-400">&lt;</span>
          <span className="text-gray-400">/</span>
          <span className="text-blue-400">title</span>
@@ -261,7 +273,7 @@ export default function Home({ theme }) {
           p <span className="text-blue-200">class=</span>
           <span className="text-orange-400">&quot;paragraph&quot;</span>
          </span>
-         <span className="text-gray-400">&gt;</span>Salam!
+         <span className="text-gray-400">&gt;</span>Alhamdulillah
          <span className="text-gray-400">&lt;</span>
          <span className="text-gray-400">/</span>
          <span className="text-blue-400">p</span>

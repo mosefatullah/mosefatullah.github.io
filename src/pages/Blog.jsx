@@ -9,12 +9,12 @@ function Blog() {
   async function fetchPosts(afterID, repeat = true) {
     async function gql(query) {
       const response = await fetch("https://gql.hashnode.com/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authentication: "Bearer 6fa1d706-55f1-462f-8606-48aeed6b9c6c",
-        },
-        body: JSON.stringify({ query }),
+       method: "POST",
+       headers: {
+        "Content-Type": "application/json",
+        Authentication: "Bearer 5aa22f37-726d-4dfd-88a9-4e7e76dabd49",
+       },
+       body: JSON.stringify({ query }),
       });
       return response.json();
     }
