@@ -126,7 +126,7 @@ export default function Home({ theme }) {
            repeatType: "reverse",
           }}
           animate={{ opacity: 0.2 }}
-            className="text-green-500 inline-block"
+          className="text-green-500 inline-block"
          >
           &lt;/&gt;
          </motion.span>
@@ -315,21 +315,61 @@ export default function Home({ theme }) {
      </WithMotion>
     </div>
 
-    {/* ____ INTRO SECTION 
-                <WithMotion object={slideAnimation("up")} className="__intro-section w-full mx-auto p-4 md:px-8 py-14 max-w-7xl overflow-x-hidden" id="intro">
-                    <div className="flex flex-col md:flex-row gap-4 lg:gap-8">
-                        <WithMotion object={slideAnimation("left")} className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4">
-                        </WithMotion>
-                        <WithMotion object={slideAnimation("right")} className="bg-white shadow lg:w-[60vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4">
-                        </WithMotion>
-                    </div>
-                    <div className="mt-8 lg:mt-[70px] flex flex-col md:flex-row gap-4 lg:gap-8">
-                        <WithMotion object={slideAnimation("left")} className="bg-white shadow lg:w-[60vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4">
-                        </WithMotion>
-                        <WithMotion object={slideAnimation("right")} className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4">
-                        </WithMotion>
-                    </div>
-                </WithMotion>*/}
+    {/* ____ INTRO SECTION */}
+    <WithMotion
+     object={slideAnimation("up")}
+     className="__intro-section w-full mx-auto p-4 md:px-8 py-14 max-w-7xl overflow-x-hidden"
+     id="intro"
+    >
+     <div className="flex flex-col md:flex-row gap-4 lg:gap-8">
+      <WithMotion
+       object={slideAnimation("left")}
+       className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
+      >
+       <div className="flex flex-col h-full justify-center items-center text-center">
+        <img
+         src="/images/google.png"
+         alt="Google Verified"
+         className="w-16 h-16 mb-4"
+        />
+        <h2 className="text-2xl font-medium text-gray-900 dark:text-white mb-2">
+         🎉 Verified by Google
+        </h2>
+        <a
+         href="https://share.google/rDYCitA660raT6BJY"
+         target="_blank"
+         rel="noopener noreferrer"
+         className="text-blue-500 hover:underline"
+        >
+         https://share.google/rDYCitA660raT6BJY
+        </a>
+       </div>
+      </WithMotion>
+      <WithMotion
+       object={slideAnimation("right")}
+       className="bg-white shadow lg:w-[60vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
+      >
+       <iframe
+        src="https://www.youtube.com/embed/HWUEhGd3dx8?si=9vmicXq2FIIKnJl2"
+        title="My Introduction"
+        className="w-full h-full rounded-md"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+       ></iframe>
+      </WithMotion>
+     </div>
+     <div className="mt-8 lg:mt-[70px] flex flex-col md:flex-row gap-4 lg:gap-8">
+      <WithMotion
+       object={slideAnimation("left")}
+       className="bg-white shadow lg:w-[60vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
+      ></WithMotion>
+      <WithMotion
+       object={slideAnimation("right")}
+       className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
+      ></WithMotion>
+     </div>
+    </WithMotion>
 
     <div className="w-full border-t border-gray-200 dark:border-0 bg-pattern dark:bg-dpattern lg:py-5 dark:from-gray-900 bg-gradient-to-r from-white">
      {/* ____ OVERVIEW SECTION */}

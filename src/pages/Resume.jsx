@@ -29,6 +29,23 @@ function Resume() {
      width="100%"
      height="800px"
     ></object>
+    <br />
+    <br />
+    <br />
+    <h2 className="text-center text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+     Old Resume
+    </h2>
+    <div className="flex items-center justify-center mb-7">
+     <a
+      href="/Resume0.pdf"
+      target="_blank"
+      rel="noreferrer"
+     >
+      <button className="py-2 px-6 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all">
+       See now
+      </button>
+     </a>
+    </div>
    </div>
   </div>
  );

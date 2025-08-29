@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 // components
 import Navbar from "./components/Navbar";
@@ -21,9 +21,10 @@ function App() {
  );
 
  const Layout = function ({ children }) {
+  const location = useLocation();
   React.useEffect(() => {
    window.scrollTo(0, 0);
-  }, [children]);
+  }, [location.pathname]);
   return (
    <>
     <Navbar theme={theme} setTheme={setTheme} />
@@ -34,7 +35,7 @@ function App() {
        className="fixed bottom-8 right-8 z-50 hover:scale-110 transition-all duration-300 cursor-pointer animate-bounce"
        style={{ borderRadius: "50%", overflow: "hidden" }}
       >
-       <a href="https://m.me/sefatullahpage" target="_blank" rel="noreferrer">
+       <a href="https://m.me/mosefatullah" target="_blank" rel="noreferrer">
         <img
          src="/images/msngr.png"
          alt="Messenger"

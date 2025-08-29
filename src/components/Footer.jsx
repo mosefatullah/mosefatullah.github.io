@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
  return (
   <div className="bg-slate-200 dark:bg-gray-800">
-   <div className="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+   <div className="max-w-6xl mx-auto py-12 px-6 lg:py-16 lg:px-8">
     <div className="xl:grid xl:grid-cols-2 xl:gap-8">
      <div className="md:grid md:grid-cols-2 md:gap-8 xl:col-span-2">
       <div className="grid grid-cols-2 gap-8">
@@ -93,6 +93,18 @@ export default function Footer() {
          </li>
         </ul>
        </div>
+      </div>
+      <div className="mt-12 md:mt-0">
+       <iframe
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsefatullahpage&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=992880515259603"
+        width="340"
+        height="130"
+        style={{ border: "none", overflow: "hidden" }}
+        scrolling="no"
+        frameBorder="0"
+        allowFullScreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+       ></iframe>
       </div>
      </div>
     </div>

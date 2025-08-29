@@ -64,9 +64,9 @@ function About() {
                                 <div className="flex flex-wrap gap-4 mb-12">
                                     {
                                         Data.overview.about.skills[k].map((s, i) => (
-                                            <WithMotion key={i} object={{ animate: { opacity: 1, y: 0 }, initial: { opacity: 0, y: 50 }, transition: { duration: 0.5 } }} className="flex items-center justify-center h-9 bg-blue-100 rounded-md md:ring-9 md:ring-white md:dark:ring-gray-900 dark:bg-white py-0.5 ps-1 pe-1.5 cursor-default hover:bg-gray-600 text-gray-500 dark:text-gray-600 hover:text-white transition-all">
-                                                <img src={s.logo} alt={s.skill} className="h-full" />
-                                                <h3 className="text-sm font-normal ms-2">{s.skill}</h3>
+                                            <WithMotion key={i} object={{ animate: { opacity: 1, y: 0 }, initial: { opacity: 0, y: 50 }, transition: { duration: 0.5 } }} className="flex items-center justify-center h-9 bg-blue-100 rounded-md md:ring-9 md:ring-white md:dark:ring-gray-900 dark:bg-white py-0.5 ps-1 pe-3 cursor-default hover:bg-gray-600 text-gray-500 dark:text-gray-600 hover:text-white transition-all">
+                                                <img src={s.logo} alt={s.skill} className="w-6 h-6 rounded-sm object-cover" />
+                                                <h3 className="font-normal ms-2">{s.skill}</h3>
                                             </WithMotion>
                                         ))
                                     }

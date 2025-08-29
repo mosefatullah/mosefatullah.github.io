@@ -15,7 +15,7 @@ export default {
  overview: {
   heading: "Overview",
   paragraph:
-   "Sefatullah have learned many programming languages and frameworks. He is continuously learning and practicing coding.",
+   "Sefatullah have learned many programming languages (for example: C, Python, JavaScript etc.) and frameworks. He is continuously learning and practicing coding.",
   lists: [
    {
     name: "HTML",
@@ -99,41 +99,44 @@ export default {
      {
       skill: "HTML",
       logo: "/images/html-5.png",
-      category: "Languages",
      },
      {
       skill: "CSS",
       logo: "/images/css3.png",
-      category: "Languages",
      },
      {
       skill: "JavaScript",
       logo: "/images/javascript.png",
-      category: "Languages",
+     },
+     {
+      skill: "Python",
+      logo: "/images/python.png",
+     },
+     {
+      skill: "C",
+      logo: "/images/c.png",
      },
     ],
     Frameworks: [
      {
       skill: "Bootstrap",
       logo: "/images/bootstrap.png",
-      category: "Frameworks",
      },
      {
       skill: "Tailwind",
       logo: "/images/tailwindcss.png",
-      category: "Frameworks",
      },
-    ],
-    Libraries: [
+     {
+      skill: "TypeScript",
+      logo: "/images/typescript.png",
+     },
      {
       skill: "React",
       logo: "/images/react-native.png",
-      category: "Libraries",
      },
      {
       skill: "Node.js",
       logo: "/images/nodejs.png",
-      category: "Libraries",
      },
     ],
     Databases: [
@@ -142,18 +145,39 @@ export default {
       logo: "/images/mongodb.png",
       category: "Databases",
      },
+     {
+      skill: "MySQL",
+      logo: "/images/mysql.png",
+      category: "Databases",
+     },
+     {
+      skill: "PostgreSQL",
+      logo: "/images/postgresql.png",
+      category: "Databases",
+     },
     ],
     APIs: [
      {
-      skill: "REST APIs",
+      skill: "REST API",
       logo: "/images/api-settings.png",
      },
     ],
-    Platforms: [
+    Tools: [
      {
       skill: "Firebase",
       logo: "/images/firebase.png",
-      category: "Platforms",
+     },
+     {
+      skill: "Git",
+      logo: "/images/git.jpeg",
+     },
+     {
+      skill: "GitHub",
+      logo: "/images/github.jpeg",
+     },
+     {
+      skill: "VS Code",
+      logo: "/images/vscode.png",
      },
     ],
    },
