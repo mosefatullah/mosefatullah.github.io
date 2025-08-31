@@ -9,13 +9,13 @@ export default {
    "A Fullstack Web Developer!",
   ],
   paragraph:
-   "Mohammad Sefatullah is a Bangladeshi web developer and programmer born in the early 2000s. He dreams of becoming a software developer. He is trying to get involved in various extra curricular activities with the vision of his personal growth and minimum impact on the society.",
+   "I am a Bangladeshi student and web developer aspiring to become a software developer. My vision is to build EdTech solutions that empower my community and create a lasting positive impact.",
   action: "Learn More",
  },
  overview: {
   heading: "Overview",
   paragraph:
-   "Sefatullah have learned many programming languages (for example: C, Python, JavaScript etc.) and frameworks. He is continuously learning and practicing coding.",
+   "Sefatullah have learned many programming languages and frameworks. He is continuously learning and practicing coding.",
   lists: [
    {
     name: "HTML",
@@ -55,7 +55,7 @@ export default {
    },
   ],
   about: {
-   tabs: ["Experience", "Skills", "Education", "Certifications"],
+   tabs: ["Experience", "Skills", "Education", "Certifications", "Research"],
    experiences: [
     {
      company: "Mukti Coders",
@@ -208,6 +208,14 @@ export default {
      skills:
       "Communication, Leadership, Problem Solving, Public Speaking, Team Work, Critical Thinking, Emotional intelligence",
      certificate_img: "/images/skillsboost-certificate.jpg",
+    },
+    {
+      title: "The Galactic Problem Solver",
+      provider: "NASA Space Apps Challenge 2024",
+        logo: "/images/nasa.jpg",
+        duration: "Oct 2024",
+        skills: "Problem Solving, Team Work, React.js, API",
+        certificate_img: "/images/nasa-certificate.png",
     },
     {
      title: "Frontend Developer (React)",

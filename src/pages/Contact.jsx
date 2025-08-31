@@ -33,15 +33,15 @@ function Contact() {
       Contact Information
      </h2>
      <div className="bg-white dark:bg-gray-800 p-8 lg:py-12 lg:pb-[15rem] lg:px-16 rounded-2xl max-w-[500px] mx-auto lg:mx-0">
-      <p className="mb-2">
+      {/*<p className="mb-2">
        <b>Email:</b>{" "}
        <a
-        href="mailto:mosefatullah@gmail.com"
+        href="mailto:@gmail.com"
         className="text-gray-500 dark:text-gray-400"
        >
-        mosefatullah@gmail.com
+        @gmail.com
        </a>
-      </p>
+      </p>*/}
       <p className="mb-2">
        <b>Facebook:</b>{" "}
        <a

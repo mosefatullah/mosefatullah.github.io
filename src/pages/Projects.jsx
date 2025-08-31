@@ -24,79 +24,110 @@ function Projects() {
    <section className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 px-4 lg:px-0 mt-12">
     {[
      {
-      title: "Personal Portfolio of Saad Al Amin",
+      title: "Portfolio of Saad Al Amin",
       image: "/images/works/p1.png",
       live: "https://saadalamin.com",
+      description:
+       "A personal portfolio website. Made with React.js + Bootstrap and Firebase for database.",
      },
      {
-      title: "Website of Millat Science Club",
+      title: "Millat Science Club",
       image: "/images/works/p4.png",
       live: "https://mscbd.org",
+      description:
+       "A user-friendly club website. Made with React.js + Tailwind CSS and Node.js + PostgreSQL.",
      },
      {
       title: "Inventory Management System",
       image: "/images/works/p3.png",
-      live: "https://imt.thebloodproject.com/",
       source: "https://github.com/mosefatullah/The-Blood-Project",
+      description:
+       " My first MERN-stack voluntary project. Developed in 2 days - voluntary work for Tamzid Rahman.",
      },
      {
       title: "Agency Website of Videophics",
       image: "/images/works/p8.png",
       live: "https://videophics.com/",
       source: "https://github.com/videophics/videophics.github.io",
-     },
-     {
-      title: "Band Qaseeda Website",
-      image: "/images/works/p5.png",
-      live: "https://www.qaseeda.org/",
+      description:
+       "A professional website for a branding agency. Built with React.js and Tailwind CSS.",
      },
      {
       title: "School Website",
       image: "/images/works/p2.png",
       live: "https://mumodel.info/",
+      description:
+       "A website for a secondary school in Bangladesh. Built with HTML + CSS + Bootstrap and Firebase for database.",
      },
      {
       title: "Special Organization Website",
       image: "/images/works/p6.png",
       live: "https://specialstars.github.io/",
       source: "https://github.com/specialstars/specialstars.github.io",
+      description:
+       "A website for a special organization. Built with HTML + SCSS and JavaScript + Firebase.",
      },
      {
       title: "Youth Organization Website",
       image: "/images/works/p7.png",
       live: "https://www.muktirghonta.com/",
       source: "https://github.com/saadalamin/muktirghonta.com",
+      description:
+       "A website for a youth organization. Built with HTML + CSS + Bootstrap and Firebase for database.",
+     },
+     {
+      title: "Al-Muqayseh General Contracting Est.",
+      image: "/images/works/p5.png",
+      live: "https://almuqayseh.pages.dev/",
+      source: "https://github.com/almuqayseh/almuqayseh.github.io",
+      description:
+       "A website for a manpower company. Built with React + Bootstrap and JavaScript.",
+     },
+     {
+      title: "Reacto Calculator [Demo]",
+      image: "/images/works/p9.png",
+      live: "https://mosefatullah.github.io/react-calculator",
+      source: "https://github.com/mosefatullah/react-calculator",
+      description:
+       "A simple scientific calculator built with React + Mathjs. It performs basic arithmetic operations.",
      },
     ].map((d) => (
      <>
-      <div className="mt-12 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl">
+      <div className="mt-12 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl h-fit">
        <img src={d.image} alt="Project" className="w-full rounded-t-md" />
        <div className="p-6 space-y-4">
-        <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
-         {d.title}
-        </h2>
-        <a
-         href={d.live || ""}
-         target="_blank"
-         rel="noreferrer"
-         className={
-          "inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition me-2 cursor-pointer " +
-          (d.live ? "" : "hidden")
-         }
-        >
-         Live Website
-        </a>
-        <a
-         href={d.source || ""}
-         target="_blank"
-         rel="noreferrer"
-         className={
-          "inline-block px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-900 transition cursor-pointer " +
-          (d.source ? "" : "hidden")
-         }
-        >
-         Project Link
-        </a>
+        <div>
+         <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
+          {d.title}
+         </h2>
+         <p className="text-sm text-gray-600 dark:text-gray-400 pb-2 pt-1.5">
+          {d.description}
+         </p>
+        </div>
+        <div>
+         <a
+          href={d.live || ""}
+          target="_blank"
+          rel="noreferrer"
+          className={
+           "inline-block px-4 py-1.5 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 transition me-2 cursor-pointer " +
+           (d.live ? "" : "hidden")
+          }
+         >
+          Live Website
+         </a>
+         <a
+          href={d.source || ""}
+          target="_blank"
+          rel="noreferrer"
+          className={
+           "inline-block px-4 py-2 bg-gray-700 text-white text-sm rounded-md hover:bg-gray-900 transition cursor-pointer " +
+           (d.source ? "" : "hidden")
+          }
+         >
+          Project Link
+         </a>
+        </div>
        </div>
       </div>
      </>

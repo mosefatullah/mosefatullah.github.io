@@ -38,7 +38,7 @@ function App() {
        <a href="https://m.me/mosefatullah" target="_blank" rel="noreferrer">
         <img
          src="/images/msngr.png"
-         alt="Messenger"
+         alt=""
          className="w-14 h-14 md:w-16 md:h-16 hover:scale-110 transition-all duration-300"
         />
        </a>

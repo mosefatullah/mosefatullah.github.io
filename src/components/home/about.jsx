@@ -100,7 +100,7 @@ function About() {
                         Data.overview.about.certifications.map((e, i) => (
                             <WithMotion key={i} object={{ animate: { opacity: 1, y: 0 }, initial: { opacity: 0, y: 50 }, transition: { duration: 0.5 } }} className="relative border-b border-gray-200 dark:border-slate-700">
                                 <div className="py-5 px-3 md:px-7 md:flex md:gap-6">
-                                    <img src={e.logo} alt="Education" className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-md md:ring-9 md:ring-white md:dark:ring-gray-900 dark:bg-blue-900 mb-4 md:mb-0" />
+                                    <img src={e.logo} alt="Education" className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-md md:ring-9 md:ring-white md:dark:ring-gray-900 dark:bg-blue-900 mb-4 md:mb-0 object-cover" />
                                     <div>
                                         <h3 className="mb-1 flex items-center text-xl font-semibold text-gray-900 dark:text-white">{e.title}</h3>
                                         <span className="bg-purple-100 text-purple-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">{e.provider}</span>

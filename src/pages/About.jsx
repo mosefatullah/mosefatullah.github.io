@@ -34,7 +34,7 @@ function About() {
       Mohammad Sefatullah, a young and promising web designer, developer, and
       programmer, hails from Bangladesh. Born in the early 2000s, his passion
       for coding ignited while he was in seventh grade. This early spark ignited
-      a dream – to become a software develop and make a positive impact on his
+      a dream – to become a software developer and make a positive impact on his
       community.
      </p>
     </div>

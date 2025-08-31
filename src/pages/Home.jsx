@@ -321,6 +321,17 @@ export default function Home({ theme }) {
      className="__intro-section w-full mx-auto p-4 md:px-8 py-14 max-w-7xl overflow-x-hidden"
      id="intro"
     >
+    {/*<div className="mb-8 lg:mb-[70px] flex flex-col md:flex-row gap-4 lg:gap-8">
+       <WithMotion
+       object={slideAnimation("left")}
+       className="bg-white shadow lg:w-[60vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
+      >
+      </WithMotion>
+      <WithMotion
+       object={slideAnimation("right")}
+       className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
+      ></WithMotion>
+     </div>*/}
      <div className="flex flex-col md:flex-row gap-4 lg:gap-8">
       <WithMotion
        object={slideAnimation("left")}
@@ -358,16 +369,6 @@ export default function Home({ theme }) {
         allowFullScreen
        ></iframe>
       </WithMotion>
-     </div>
-     <div className="mt-8 lg:mt-[70px] flex flex-col md:flex-row gap-4 lg:gap-8">
-      <WithMotion
-       object={slideAnimation("left")}
-       className="bg-white shadow lg:w-[60vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
-      ></WithMotion>
-      <WithMotion
-       object={slideAnimation("right")}
-       className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
-      ></WithMotion>
      </div>
     </WithMotion>
 
