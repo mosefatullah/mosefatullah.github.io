@@ -7,11 +7,6 @@ function Resume() {
    <Helmet>
     <title>Resume - Mohammad Sefatullah</title>
     <meta
-     name="description"
-     content="Resume of Mohammad Sefatullah, a web developer from Bangladesh."
-     data-react-helmet="true"
-    />
-    <meta
      name="keywords"
      content="Resume, Mohammad Sefatullah, web developer, Bangladesh, frontend developer, coder"
      data-react-helmet="true"
@@ -21,6 +16,7 @@ function Resume() {
     <h1 className="text-4xl lg:text-6xl font-semibold text-gray-900 dark:text-white">
      Resume
     </h1>
+    <p className="mt-4 text-gray-600 dark:text-gray-400 xl:text-lg">Not ready yet...</p>
    </div>
    <div className="mt-12 bg-white dark:bg-slate-800 rounded-md border border-gray-200 dark:border-slate-700 shadow-md dark:shadow-xl max-w-3xl mx-auto">
     <object
@@ -29,23 +25,6 @@ function Resume() {
      width="100%"
      height="800px"
     ></object>
-    <br />
-    <br />
-    <br />
-    <h2 className="text-center text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-     Old Resume
-    </h2>
-    <div className="flex items-center justify-center mb-7">
-     <a
-      href="/Resume0.pdf"
-      target="_blank"
-      rel="noreferrer"
-     >
-      <button className="py-2 px-6 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all">
-       See now
-      </button>
-     </a>
-    </div>
    </div>
   </div>
  );

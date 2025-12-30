@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/images/mohammadsefatullah.png";
 
 export default function Navbar({ theme, setTheme }) {
  const [openNav, setOpenNav] = React.useState(false);
@@ -55,7 +54,7 @@ export default function Navbar({ theme, setTheme }) {
     id="navbar"
    >
     <div className="mx-auto max-w-7xl px-1.5 sm:px-3 lg:px-8">
-     <div className="relative flex items-center justify-between">
+     <div className="relative flex items-center justify-center">
       <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
        <button
         type="button"
@@ -102,27 +101,6 @@ export default function Navbar({ theme, setTheme }) {
          />
         </svg>
        </button>
-      </div>
-      <div className="flex flex-1 items-center justify-center lg:justify-start">
-       <Link
-        className="flex space-x-3"
-        to="/"
-        onClick={() => {
-         setOpenNav(false);
-         navInactive();
-        }}
-       >
-        <img
-         src={logo}
-         alt=""
-         width="35"
-         height="35"
-         className="w-auto rounded h-8 bg-gray-300 dark:bg-gray-700"
-        />
-        <p className="text-xl text-gray-900 dark:text-white flex items-center">
-         Sefatullah
-        </p>
-       </Link>
       </div>
       <div className="dark:text-white hidden lg:ml-6 lg:block">
        <div className="flex space-x-6 items-center nav-menu-items">
@@ -181,7 +159,7 @@ export default function Navbar({ theme, setTheme }) {
         </button>
         <Link
          to="/resume"
-         className="bg-green-600 dark:bg-blue-700 text-white rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 dark:hover:bg-blue-800"
+         className="hidden bg-green-600 dark:bg-blue-700 text-white rounded-md px-4 py-2 text-sm font-medium hover:bg-green-700 dark:hover:bg-blue-800"
         >
          Resume
         </Link>

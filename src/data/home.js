@@ -1,21 +1,15 @@
 export default {
  hero: {
-  headerP1: "Hi. I'm Sefatullah.",
-  headerP2: [
-   "A Passionate Coder!",
-   "A Web Developer!",
-   "A Programmer!",
-   "A Web Designer!",
-   "A Fullstack Web Developer!",
-  ],
+  headerP1: "I'm Sefatullah.",
+  headerP2: ["A Student!", "A Web Developer!", "A Programmer!", "A Muslim!"],
   paragraph:
-   "I am a Bangladeshi student and web developer aspiring to become a software developer. My vision is to build EdTech solutions that empower my community and create a lasting positive impact.",
+   "Mohammad Sefatullah is a student from Bangladesh and a Muslim web developer.",
   action: "Learn More",
  },
  overview: {
   heading: "Overview",
   paragraph:
-   "Sefatullah have learned many programming languages and frameworks. He is continuously learning and practicing coding.",
+   "Life is an examination, and we should acquire ilm and the right skills to serve!",
   lists: [
    {
     name: "HTML",
@@ -83,16 +77,7 @@ export default {
       "I have developed their official website and managed their IT-related works.",
      duration: "2025",
      location: "Dhaka, Bangladesh",
-    },
-    {
-     company: "Special Stars",
-     position: "Team Member",
-     logo: "/images/ss_logo.png",
-     description:
-      "I have developed their website and engaged virtually in their activities as a volunteer.",
-     duration: "Oct 2023 - 2024",
-     location: "Dhaka, Bangladesh",
-    },
+    }
    ],
    skills: {
     Languages: [
@@ -188,7 +173,7 @@ export default {
      degree: "HSC (Science)",
      duration: "2023 - 2025",
      location: "Dhaka, Bangladesh",
-     grade: "GPA: (waiting)",
+     grade: "GPA: A+",
     },
     {
      logo: "/images/1630656695072.jpeg",
@@ -196,26 +181,17 @@ export default {
      degree: "SSC (Science)",
      duration: "2021 - 2023",
      location: "Dhaka, Bangladesh",
-     grade: "GPA: 5.00",
+     grade: "GPA: A+",
     },
    ],
    certifications: [
     {
-     title: "SkillsBoost Soft Skills Development Program",
-     provider: "Youth Skill Development Institute Trust",
-     logo: "/images/ycibd22_logo.jpeg",
-     duration: "Jul 2024",
-     skills:
-      "Communication, Leadership, Problem Solving, Public Speaking, Team Work, Critical Thinking, Emotional intelligence",
-     certificate_img: "/images/skillsboost-certificate.jpg",
-    },
-    {
-      title: "The Galactic Problem Solver",
-      provider: "NASA Space Apps Challenge 2024",
-        logo: "/images/nasa.jpg",
-        duration: "Oct 2024",
-        skills: "Problem Solving, Team Work, React.js, API",
-        certificate_img: "/images/nasa-certificate.png",
+     title: "The Galactic Problem Solver",
+     provider: "NASA Space Apps Challenge 2024",
+     logo: "/images/nasa.jpg",
+     duration: "Oct 2024",
+     skills: "Problem Solving, Team Work, React.js, API",
+     certificate_img: "/images/nasa-certificate.png",
     },
     {
      title: "Frontend Developer (React)",

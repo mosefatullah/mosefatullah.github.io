@@ -1,18 +1,10 @@
 import { Helmet } from "react-helmet";
 
-// Assets
-import me from "../assets/images/sefatullah.jpg";
-
 function About() {
  return (
   <div className="__about min-h-[70vh]">
    <Helmet>
     <title>About | Mohammad Sefatullah</title>
-    <meta
-     name="description"
-     content="Mohammad Sefatullah is a professional full stack web developer from Bangladesh born in 2006. He dreams of becoming a software engineer and passionate coding leader. He is trying to get involved in various extra curricular activities with the vision of making a positive impact on the society."
-     data-react-helmet="true"
-    />
     <meta
      name="keywords"
      content="Mohammad Sefatullah, Sefatullah, Full Stack Web Developer, Coder, Programmer, MERN Stack Developer, Web Designer, Web Developer, Mohammad Sefatullah Official Website"
@@ -21,38 +13,22 @@ function About() {
    </Helmet>
    {/* ____ HERO SECTION */}
    <div
-    className="grid grid-cols-1 lg:grid-cols-2 gap-9 p-4 pt-14 lg:pb-20 justify-items-center items-center relative md:px-16 lg:gap-y-12"
+    className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 flex flex-col justify-center"
     style={{
      minHeight: "calc(100vh - 74px)",
     }}
    >
-    <div className="max-w-xl lg:mb-0">
+    <div className="max-w-3xl mx-auto">
      <h1 className="text-4xl lg:text-5xl text-center font-semibold text-gray-900 dark:text-white">
       About
      </h1>
+    <div className="flex flex-col gap-6 mt-8">
      <p className="mt-9 text-gray-600 dark:text-gray-400 xl:text-lg">
       Mohammad Sefatullah, a young and promising web designer, developer, and
       programmer, hails from Bangladesh. Born in the early 2000s, his passion
-      for coding ignited while he was in seventh grade. This early spark ignited
-      a dream – to become a software developer and make a positive impact on his
-      community.
+      for ilm and the right skills ignited while he was in seventh grade. This early spark ignited
+      a dream – to become and doing something.
      </p>
-    </div>
-    <div className=" bg-white dark:bg-gray-800 rounded-xl shadow-xl min-w-[300px] hidden lg:block">
-     <img
-      src="/android-chrome-512x512.png"
-      alt="Mohammad Sefatullah"
-      className="h-full rounded-xl object-cover min-h-[300px] max-h-[400px]"
-     />
-    </div>
-    <div className=" bg-white dark:bg-gray-800 rounded-xl shadow-xl w-full max-w-xl min-w-[300px]">
-     <img
-      src={me}
-      alt="Mohammad Sefatullah: Bangladeshi Web Designer, Developer, and Programmer"
-      className="w-full h-full rounded-xl object-cover min-h-[300px] max-h-[350px]"
-     />
-    </div>
-    <div className="max-w-xl mb-[5rem] lg:mb-0">
      <p className="text-gray-600 dark:text-gray-400 xl:text-lg">
       Sefatullah completed his Dakhil (SSC) at Darunnazat Siddikia Kamil
       Madrasah and Alim (HSC) at Tamirul Millat Kamil Madrasah. Despite his
@@ -61,6 +37,7 @@ function About() {
       not only hones his technical abilities but also allows him to give back to
       his community in a meaningful way.
      </p>
+    </div>
     </div>
    </div>
   </div>

@@ -24,13 +24,6 @@ function Projects() {
    <section className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 px-4 lg:px-0 mt-12">
     {[
      {
-      title: "Portfolio of Saad Al Amin",
-      image: "/images/works/p1.png",
-      live: "https://saadalamin.com",
-      description:
-       "A personal portfolio website. Made with React.js + Bootstrap and Firebase for database.",
-     },
-     {
       title: "Millat Science Club",
       image: "/images/works/p4.png",
       live: "https://mscbd.org",
@@ -45,46 +38,7 @@ function Projects() {
        " My first MERN-stack voluntary project. Developed in 2 days - voluntary work for Tamzid Rahman.",
      },
      {
-      title: "Agency Website of Videophics",
-      image: "/images/works/p8.png",
-      live: "https://videophics.com/",
-      source: "https://github.com/videophics/videophics.github.io",
-      description:
-       "A professional website for a branding agency. Built with React.js and Tailwind CSS.",
-     },
-     {
-      title: "School Website",
-      image: "/images/works/p2.png",
-      live: "https://mumodel.info/",
-      description:
-       "A website for a secondary school in Bangladesh. Built with HTML + CSS + Bootstrap and Firebase for database.",
-     },
-     {
-      title: "Special Organization Website",
-      image: "/images/works/p6.png",
-      live: "https://specialstars.github.io/",
-      source: "https://github.com/specialstars/specialstars.github.io",
-      description:
-       "A website for a special organization. Built with HTML + SCSS and JavaScript + Firebase.",
-     },
-     {
-      title: "Youth Organization Website",
-      image: "/images/works/p7.png",
-      live: "https://www.muktirghonta.com/",
-      source: "https://github.com/saadalamin/muktirghonta.com",
-      description:
-       "A website for a youth organization. Built with HTML + CSS + Bootstrap and Firebase for database.",
-     },
-     {
-      title: "Al-Muqayseh General Contracting Est.",
-      image: "/images/works/p5.png",
-      live: "https://almuqayseh.pages.dev/",
-      source: "https://github.com/almuqayseh/almuqayseh.github.io",
-      description:
-       "A website for a manpower company. Built with React + Bootstrap and JavaScript.",
-     },
-     {
-      title: "Reacto Calculator [Demo]",
+      title: "Reacto Calculator",
       image: "/images/works/p9.png",
       live: "https://mosefatullah.github.io/react-calculator",
       source: "https://github.com/mosefatullah/react-calculator",

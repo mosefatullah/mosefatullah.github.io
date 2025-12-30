@@ -43,12 +43,14 @@ function Contact() {
        </a>
       </p>*/}
       <p className="mb-2">
-       <b>Facebook:</b>{" "}
+       <b>Linkedin:</b>{" "}
        <a
-        href="https://m.me/mosefatullah"
+        href="https://linkedin.com/in/mosefatullah/"
+        target="_blank"
+        rel="noopener noreferrer"
         className="text-gray-500 dark:text-gray-400"
        >
-        m.me/mosefatullah
+        linkedin.com/in/mosefatullah/
        </a>
       </p>
      </div>

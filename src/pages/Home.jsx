@@ -40,11 +40,6 @@ export default function Home({ theme }) {
     <link rel="canonical" href="https://www.sefatullah.com" />
 
     <meta
-     name="description"
-     content="Mohammad Sefatullah is a passionate full stack web developer from Bangladesh born in 2006. He dreams of becoming a software engineer. He is trying to get involved in various extra curricular activities with the vision of making a positive impact on the society."
-     data-react-helmet="true"
-    />
-    <meta
      name="keywords"
      content="Mohammad Sefatullah, Sefatullah, Full Stack Web Developer, Coder, Programmer, MERN Stack Developer, Web Designer, Web Developer, Mohammad Sefatullah Official Website"
      data-react-helmet="true"
@@ -116,7 +111,7 @@ export default function Home({ theme }) {
      <WithMotion object={headContainerAnimation}>
       <div className="mb-[3rem] lg:mb-0 pt-6 lg:pt-0">
        <motion.div {...headTextAnimation}>
-        <h1 className="text-3xl md:text-5xl font-bold lg:leading-[3.5rem]">
+        <h1 className="text-4xl md:text-6xl font-bold lg:leading-[4rem]">
          {Data.hero.headerP1}&nbsp;
          <motion.span
           transition={{
@@ -188,7 +183,7 @@ export default function Home({ theme }) {
          <div className="w-3 h-3 bg-yellow-600 rounded-full"></div>
          <div className="w-3 h-3 bg-green-600 rounded-full"></div>
         </div>
-        <p className="text-sm text-gray-300 w-full p-0">Visual Studio Code</p>
+        <p className="text-sm text-gray-300 w-full p-0">Zadid Studio Code</p>
        </div>
        <div className="bg-gray-700 border-b border-gray-600 whitespace-nowrap overflow-x-auto">
         <button className="bg-gray-800 px-3 py-1 border-e border-gray-600">
@@ -237,7 +232,7 @@ export default function Home({ theme }) {
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <span className="text-gray-400">&lt;</span>
          <span className="text-blue-400">title</span>
-         <span className="text-gray-400">&gt;</span>খবর - News
+         <span className="text-gray-400">&gt;</span>খবর
          <span className="text-gray-400">&lt;</span>
          <span className="text-gray-400">/</span>
          <span className="text-blue-400">title</span>
@@ -273,7 +268,7 @@ export default function Home({ theme }) {
           p <span className="text-blue-200">class=</span>
           <span className="text-orange-400">&quot;paragraph&quot;</span>
          </span>
-         <span className="text-gray-400">&gt;</span>Alhamdulillah
+         <span className="text-gray-400">&gt;</span>আলহামদুলিল্লাহ
          <span className="text-gray-400">&lt;</span>
          <span className="text-gray-400">/</span>
          <span className="text-blue-400">p</span>
@@ -315,62 +310,6 @@ export default function Home({ theme }) {
      </WithMotion>
     </div>
 
-    {/* ____ INTRO SECTION */}
-    <WithMotion
-     object={slideAnimation("up")}
-     className="__intro-section w-full mx-auto p-4 md:px-8 py-14 max-w-7xl overflow-x-hidden"
-     id="intro"
-    >
-    {/*<div className="mb-8 lg:mb-[70px] flex flex-col md:flex-row gap-4 lg:gap-8">
-       <WithMotion
-       object={slideAnimation("left")}
-       className="bg-white shadow lg:w-[60vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
-      >
-      </WithMotion>
-      <WithMotion
-       object={slideAnimation("right")}
-       className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
-      ></WithMotion>
-     </div>*/}
-     <div className="flex flex-col md:flex-row gap-4 lg:gap-8">
-      <WithMotion
-       object={slideAnimation("left")}
-       className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
-      >
-       <div className="flex flex-col h-full justify-center items-center text-center">
-        <img
-         src="/images/google.png"
-         alt="Google Verified"
-         className="w-16 h-16 mb-4"
-        />
-        <h2 className="text-2xl font-medium text-gray-900 dark:text-white mb-2">
-         🎉 Verified by Google
-        </h2>
-        <a
-         href="https://share.google/rDYCitA660raT6BJY"
-         target="_blank"
-         rel="noopener noreferrer"
-         className="text-blue-500 hover:underline"
-        >
-         https://share.google/rDYCitA660raT6BJY
-        </a>
-       </div>
-      </WithMotion>
-      <WithMotion
-       object={slideAnimation("right")}
-       className="bg-white shadow lg:w-[60vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
-      >
-       <iframe
-        src="https://www.youtube.com/embed/HWUEhGd3dx8?si=9vmicXq2FIIKnJl2"
-        title="My Introduction"
-        className="w-full h-full rounded-md"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-       ></iframe>
-      </WithMotion>
-     </div>
-    </WithMotion>
 
     <div className="w-full border-t border-gray-200 dark:border-0 bg-pattern dark:bg-dpattern lg:py-5 dark:from-gray-900 bg-gradient-to-r from-white">
      {/* ____ OVERVIEW SECTION */}
@@ -422,6 +361,50 @@ export default function Home({ theme }) {
                         </div>
                     </div> */}
     </div>
+
+    {/* ____ FINAL SECTION */}
+    <WithMotion
+     object={slideAnimation("up")}
+     className="__final-section w-full mx-auto p-4 md:px-8 py-14 max-w-7xl overflow-x-hidden"
+     id="final"
+    >
+    {/*<div className="mb-8 lg:mb-[70px] flex flex-col md:flex-row gap-4 lg:gap-8">
+       <WithMotion
+       object={slideAnimation("left")}
+       className="bg-white shadow lg:w-[60vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
+      >
+      </WithMotion>
+      <WithMotion
+       object={slideAnimation("right")}
+       className="bg-white shadow lg:w-[40vw] dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
+      ></WithMotion>
+     </div>*/}
+     <div className="flex flex-col md:flex-row gap-4 lg:gap-8">
+      <WithMotion
+       object={slideAnimation("left")}
+       className="bg-white shadow w-full dark:bg-gray-700/50 rounded-[2rem] h-[400px] p-4"
+      >
+       <div className="flex flex-col h-full justify-center items-center text-center">
+        <img
+         src="/images/google.png"
+         alt="Google Recognized"
+         className="w-16 h-16 mb-4"
+        />
+        <h2 className="text-2xl font-medium text-gray-900 dark:text-white mb-2">
+         🎉 Recognized Profile
+        </h2>
+        <a
+         href="https://share.google/rDYCitA660raT6BJY"
+         target="_blank"
+         rel="noopener noreferrer"
+         className="text-blue-500 hover:underline"
+        >
+         https://share.google/rDYCitA660raT6BJY
+        </a>
+       </div>
+      </WithMotion>
+     </div>
+    </WithMotion>
    </div>
   </>
  );

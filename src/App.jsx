@@ -31,18 +31,18 @@ function App() {
     {children}
     <Footer />
 
-      <div
+      {/*<div
        className="fixed bottom-8 right-8 z-50 hover:scale-110 transition-all duration-300 cursor-pointer animate-bounce"
        style={{ borderRadius: "50%", overflow: "hidden" }}
       >
-       <a href="https://m.me/mosefatullah" target="_blank" rel="noreferrer">
+       <a href="https://m.me/" target="_blank" rel="noreferrer">
         <img
          src="/images/msngr.png"
          alt=""
          className="w-14 h-14 md:w-16 md:h-16 hover:scale-110 transition-all duration-300"
         />
        </a>
-      </div>
+      </div>*/}
    </>
   );
  };
